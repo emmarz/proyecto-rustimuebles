@@ -1,0 +1,19 @@
+.padre{
+    background-color:rgb(63, 67, 73);
+}
+header a{
+    text-decoration: none;
+    color: rgb(133, 157, 170);
+}
+header a:hover{
+    color: #c07373;
+}
+
+.social a{
+    color: #fff;
+    padding: 0px 8px;
+}
+.social a:hover{   /*difiere el color con respecto a los otros hipervinculos*/
+    color: rgb(100, 106, 106);
+}
+

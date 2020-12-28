@@ -1,0 +1,82 @@
+
+/*#############    ANIMACION    ########*/
+.contenedor_animacion{
+    position: relative;
+}
+.contenedor_animacion img{
+    width: 170px;
+    height: 100px;
+    border-radius: 12px;
+    padding: 10px 10px;
+    margin: 0px;
+    /*para colocarlo por detras*/
+    position: absolute;
+    z-index: -1;
+}
+/*configurar la animacion*/
+/*animation: 
+    name: nombre del keyframes
+    duration: tiempo que utilizara para reproducirse 100%
+    timing-function: ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier (velocidad del recorrido segun como avance).
+    delay: tiempo que tarda en iniciarse
+    iteration-count: numero de veces que se reproducirá (0 a infinito).
+    direction: normal, reverse, alternate, alternate-reverse (como debe moverse)
+    fill-mode: none, forwards, backwards, both (especifica (si tiene) estilos antes o luego de ejecutar el keyframes).
+    ;*/
+.animar_logo{
+    animation: animar_logo 10s linear 0s infinite alternate running;
+}
+
+@keyframes animar_logo{ /*desplazar el logo en eje X*/
+    0%{
+        transform: translateX(2vw);
+    }
+    100%{
+        transform: translateX(80vw);
+    }
+
+}
+/*#############    GRID    ############*/
+.contenedor_tabla{
+    padding-top: 30px;
+}
+table{
+    margin: 40px 40px;
+}
+    table, th, td{
+        border-collapse: collapse;
+        border: 2px solid rgb(173, 110, 108, 0.774);
+        background-color: #f8f8e5;
+    }
+    table li, span, p{
+        font-size: 160%;
+    }
+th{
+    border: 3px solid rgba(173, 110, 108, 0.774);
+    font-size: 180%;
+}
+p{
+    text-align: justify;
+}
+.madera, h1{
+    text-align: center;
+}
+h1{
+    font-size: 300%;
+}
+.animar_h1{
+    animation: animar_h1 infinite 10s;
+}
+
+@keyframes animar_h1{
+    30%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+
+}

@@ -1,0 +1,66 @@
+body{
+    margin: 0px;
+    font-size: 62.5%;/*font-size por defecto es 16px*/
+}
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        background-color:rgb(63, 67, 73);
+    }
+    header a{
+        text-decoration: none;
+        color: rgb(133, 157, 170);
+}
+    header a:hover{
+        color: #c07373;
+    }
+        .nombre_logo{
+            margin: auto 3%;
+            font-size: 230%;
+
+        }
+            .nombre_logo a{
+                display: flex;
+                text-decoration: none;
+            }
+        .nav{
+            display: flex;
+            align-items: flex-end;
+        }
+            .nav ul{
+                display: flex;
+                flex-direction: row;
+                font-size: 170%;
+                padding: 0px 0px;
+                margin: 0px;
+                
+            }
+                .nav ul li{
+                    list-style-type: none;
+                    padding: 0px 10px;
+                    
+
+                }
+        .compra_cuenta{
+            display: flex;
+            margin: auto 0%;
+            font-size: 180%;
+        }
+            .compra_cuenta a{
+                padding: 0 15px;
+            }
+        .social{
+            display: flex;
+            margin: 0;
+        }
+            .social a{
+                font-size: 230%;
+                color: #fff;
+                padding: 0px 8px;
+            }
+            .social a:hover{   /*difiere el color con respecto a los otros hipervinculos*/
+                color: rgb(100, 106, 106);
+            }

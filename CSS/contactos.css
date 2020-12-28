@@ -1,0 +1,20 @@
+/*##########    FORM    ################*/
+.form_first{
+    /*background-color: khaki;*/
+    background: rgb(98,148,39);
+    background: rgb(233,245,219);
+    background: radial-gradient(circle, rgba(233,245,219,0.9332107843137255) 0%, rgba(202,213,88,0) 2%, rgba(102,78,54,0.5) 100%);    font-family: 'Comfortaa', cursive;
+}
+legend h1{
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 0px;
+
+}
+.contenedor_form{
+    text-align: center;
+    width: 50%;
+    margin: 40px auto;
+}
+.escalar_titulo{
+    transform: scale(1);
+}
