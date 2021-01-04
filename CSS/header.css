@@ -15,6 +15,7 @@ body{
         color: rgb(133, 157, 170);
 }
     header a:hover{
+        text-decoration: none;
         color: #c07373;
     }
         .nombre_logo{
