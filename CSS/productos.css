@@ -1,19 +1,99 @@
-.padre{
-    background-color:rgb(63, 67, 73);
+.modal{
+	display: none;
+	position: fixed;
+	z-index:1;
+	overflow: auto;
+	width: 100%;
+	height:100%;
+	background: rgba(0, 0, 0, 0.452);
 }
-header a{
-    text-decoration: none;
-    color: rgb(133, 157, 170);
-}
-header a:hover{
-    color: #c07373;
+    .container_modal{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        background-color: #fefefe;
+        width: 80%;
+        height: 100%;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+        animation-name: modal;
+        animation-duration: 1s;
+    }
+    @keyframes modal{
+        from{top:-330px; opacity:0;}
+        to{top:0; opacity:1;}
+    }
+        .header_modal{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            background-color: black;
+            color: white;
+            padding: 10px 10px;
+        }
+            .close i{
+                color: white;
+                font-size: 30px;
+                margin: 0px 10px;
+                margin-top: 5px;
+                
+            }
+            .title{
+                flex: 3 1 auto;
+                text-align: center;
+                
+            }
+        .body_modal{
+            overflow: auto;
+        }
+            .body_modal li{
+                list-style: none;
+            }
+
+        .footer_modal{
+            border-top: solid 1px rgba(0, 0, 255, 0.1);
+        }
+            .footer_modal div{
+                flex: 1 1 auto;
+            }
+            .footer_modal .button{
+                text-align: center;
+                cursor: pointer;
+                padding: 10px 0px;
+                margin: 5px 5px;
+            }
+                .btn_aplicar{
+                    background-color: rgb(143, 202, 0);
+                    border-radius: 5px;
+                }
+                .btn_limpiar{
+                    text-decoration: underline;
+                    color: grey;
+                }
+        
+
+
+
+
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
-.social a{
-    color: #fff;
-    padding: 0px 8px;
-}
-.social a:hover{   /*difiere el color con respecto a los otros hipervinculos*/
-    color: rgb(100, 106, 106);
-}
 
+
+
+
+
+
+
+
+@media (min-width: 768px ){
+    .view_mobile{
+        display: none;
+    }
+}
