@@ -13,14 +13,14 @@
     width: 30px;
 }
 
-@media (max-width:575px){
+@media (max-width:767px){
 
     .ocultar_txt{
         display: none;
     }
 }
 
-@media (max-width:767px){
+@media (max-width:991px){
 
     .ocultar_img{
         display: none;

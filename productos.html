@@ -203,248 +203,91 @@
 		venta sillas oficina
 	">
 
-	<title>Productos - Rustimuebles</title>
 	<link rel="stylesheet" href="CSS/bootstrap.min.css">
 	<link rel="stylesheet" href="CSS/all.css">
 	<link rel="stylesheet" href="CSS/header.css">
 	<link rel="stylesheet" href="CSS/footer.css">
 	<link rel="stylesheet" href="CSS/productos.css">
+	
+	<title>Productos - Rustimuebles</title>
 
 </head>
 <body>
-	<div> <!--padre-->
 
-		<header class="padre">
+	<header class="container-fluid padre">
 
-			<nav class="navbar navbar-expand-md navbar-dark"> <!--menu navegacion-->
-				<div class="container-fluid">
-				  <a class="navbar-brand" href="index2.html"><i class="fas fa-home"></i>RUSTIMUEBLES</a>
-				  
-				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				  </button>
-				  
-				  <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo02">
-						<ul class="navbar-nav mr-auto mb-2 mb-lg-0 justify-content-lg-center flex-grow-1">
-							<li class="nav-item active">
-								<a class="nav-link" aria-current="page" href="index2.html">Inicio</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="productos.html">Productos</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="materiales.html">Materiales</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="quienes_somos.html">Quienes somos</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="terminos_condiciones.html">Términos y condiciones</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="contactos.html">Contacto</a>
-							</li>
-						</ul>
-	
-						<div><!--redes sociales-->
-							<a class="btn btn-lg" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
-							<a class="btn btn-lg" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a> <!--btn-outline-dark  para darle un borde al boton-->
-						</div>
-				  </div>
-				</div>
-	
-	
-			  </nav>
-			
-		</header>
+		<nav class="navbar navbar-expand-md navbar-dark"> <!--menu navegacion-->
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index2.html"><i class="fas fa-home"></i>RUSTIMUEBLES</a>
+				
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse text-center" id="navbarTogglerDemo02">
+					<ul class="navbar-nav mr-auto mb-2 mb-lg-0 justify-content-lg-center flex-grow-1">
+						<li class="nav-item active">
+							<a class="nav-link" aria-current="page" href="index2.html">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="productos.html">Productos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="materiales.html">Materiales</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="quienes_somos.html">Quienes somos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="terminos_condiciones.html">Términos y condiciones</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contactos.html">Contacto</a>
+						</li>
+					</ul>
 
-
-
-
-
-
-		<main>
-
-			<div class="container-fluid"><!--contanier padre-->
-				<div class="container-fluid"><!--contranier del body de la pagina productos-->
-					
-					
-
-
-					<div class="row view_mobile"><!--menu MOBILE filtrar y ordenar-->
-						<div id="abrir" class="col-6 px-0 text-center">
-							<button type="button" class="btn btn-block text-nowrap">
-								<i class="fas fa-filter"></i>
-								<span>Filtrar</span>
-							</button>
-						</div>
-						<div id="abrir_ordenar" class="col-6 px-0 text-center">
-							<button type="button" class="btn btn-block text-nowrap">
-								<i class="fas fa-long-arrow-alt-up"></i>
-								<i class="fas fa-long-arrow-alt-down"></i>
-								<span>Ordernar</span>
-							</button>
-						</div>
-					</div><!--cierre menu filtrar y ordenar-->
-
-
-
-
-					<div class="row flex-row"><!--contenedor del menu DESKTOP-->
-						<div class="col-md-3"><!--barra lateral izquierda menu-->
-
-							<div><!--titulo representativo de los productos-->
-								<p class="h6 text-center">Todos los productos</p>
-							</div>
-
-							<div><!--lista del filtrado-->
-								<ul>
-									<li>
-										<label for="tipo_producto_1">
-											<input type="checkbox" id="tipo_producto_1" name="tipo_producto_1" value="comoda">
-											<span>Cómoda</span>
-										</label> 
-									</li>
-									<li>
-										<input type="checkbox" id="tipo_producto_2" name="tipo_producto_2" value="escritorio">
-										<label for="tipo_producto_2">Escritorios</label> 
-									</li>
-									<li>
-										<input type="checkbox" id="tipo_producto_3" name="tipo_producto_3" value="estanteria">
-										<label for="tipo_producto_3">Estanterias</label> 
-									</li>
-									<li>
-										<input type="checkbox" id="tipo_producto_4" name="tipo_producto_4" value="juego_mesa">
-										<label for="tipo_producto_4">Juego de mesa</label> 
-									</li>
-									<li>
-										<input type="checkbox" id="tipo_producto_5" name="tipo_producto_5" value="mesa">
-										<label for="tipo_producto_5">Mesas</label> 
-									</li>
-									<li>
-										<input type="checkbox" id="tipo_producto_6" name="tipo_producto_6" value="ropero">
-										<label for="tipo_producto_6">Roperos</label> 
-									</li>
-									<li>
-										<input type="checkbox" id="tipo_producto_7" name="tipo_producto_7" value="silla">
-										<label for="tipo_producto_7">Sillas</label>
-									</li>
-									<li>
-										<input type="checkbox" id="tipo_producto_8" name="tipo_producto_8" value="sofa">
-										<label for="tipo_producto_8">Sofás</label>
-									</li>
-								</ul>
-							</div>
-							
-						</div>
-
-						<div class="col-md-9"><!--barra lateral derecha-->
-							<div class="bg-secondary"> <!--barra DESKTOP superior filtrar y ordenar-->
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem harum beatae impedit dignissimos saepe quas, inventore vitae blanditiis cumque ipsum. Repudiandae perferendis reprehenderit maiores. Enim illum atque dolorem obcaecati corrupti!</p>
-							</div>
-	
-							<div class="bg-danger row-cols-12 row-cols-sm-4 row-cols-lg-3"> <!--plantilla de productos-->
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-								<div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-									
-								</div>
-		
-		
-		
-							</div>
-						</div>
-						
-					</div>
-					
-
-					<div class="row"><!--siguiente pagina-->	
+					<div><!--redes sociales-->
+						<a class="btn btn-lg" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+						<a class="btn btn-lg" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a> <!--btn-outline-dark  para darle un borde al boton-->
 					</div>
 				</div>
+			</div>
+			</nav>
+		
+	</header>
 
+	<main>
 
+		<div class="container-fluid p-0"><!--contanier padre-->
+			<div class="container-fluid p-0"><!--contranier del body de la pagina productos-->
 
 				
-				<div id="miModal" class="modal"> <!--modal de filtrar para MOBILE-->
-					<div class="container_modal"><!--crea contenedor para visualizar por encima del flujo normal de la página-->
-						
-						<div class="header_modal">
-							<div class="title">
-								<h3>FILTRAR</h3>
-							</div>
-							<div class="close" id="close">
-								<a href="#"><span><i class="fas fa-times"></i></span></a>
-							</div>
+				<div class="row view_mobile"><!--menu MOBILE filtrar y ordenar-->
+					<div id="abrir" class="col-6 px-0 text-center">
+						<button type="button" class="btn btn-block text-nowrap">
+							<i class="fas fa-filter"></i>
+							<span>Filtrar</span>
+						</button>
+					</div>
+					<div id="abrir_ordenar" class="col-6 px-0 text-center">
+						<button type="button" class="btn btn-block text-nowrap">
+							<i class="fas fa-long-arrow-alt-up"></i>
+							<i class="fas fa-long-arrow-alt-down"></i>
+							<span>Ordernar</span>
+						</button>
+					</div>
+				</div><!--cierre menu filtrar y ordenar-->
+
+
+				<div class="row flex-row"><!--contenedor del menu DESKTOP-->
+					<div class="col-md-3"><!--barra lateral izquierda menu-->
+
+
+						<div><!--titulo representativo de los productos-->
+							<p class="h6 text-center">Todos los productos</p>
 						</div>
 
-						<div class="body_modal">
+						<div><!--lista del filtrado-->
 							<ul>
 								<li>
 									<label for="tipo_producto_1">
@@ -482,121 +325,411 @@
 								</li>
 							</ul>
 						</div>
-						<div class="footer_modal flex">
-							<div>
-								<p class="button btn_limpiar">Limpiar filtro</p>
-							</div>
-							<div>
-								<p class="button btn_aplicar">APLICAR</p>
-							</div>
-						</div>
-
-					</div>
-				</div><!--cierre moda filtrar-->
-
-				<div id="miModal_ordenar" class="modal"> <!--modal de ordenar para MOBILE-->
-					<div class="container_modal">		<!--crea contenedor para visualizar por encima del flujo normal de la página-->
 						
-						<div class="header_modal">
-							<div class="title">
-								<h3>ORDENAR POR</h3>
+					</div>
+
+
+					<div class="col-md-9"><!--barra lateral derecha-->
+						<div> <!--barra DESKTOP superior filtrar y ordenar-->
+							<div class="container-dropdown">
+								<button class="btn-dropdown">boton</button>
+								<div class="dropdown-content">
+									
+								</div>
 							</div>
-							<div class="close" id="close_ordenar">
-								<a href="#"><span><i class="fas fa-times"></i></span></a>
-							</div>
+						<div>
+								
+						<div>
 						</div>
 
-						<div class="body_modal">
-							<ul>
-								<li>
-									<label for="tipo_producto_1">
-										<input type="checkbox" id="tipo_orden_1" name="tipo_orden_1" value="comoda">
-										<span>Cordenpan>
-									</label> 
-								</li>
-								<li>
-									<input type="checkbox" id="tipo_orden_2" name="tipo_orden_2" value="escritorio">
-									<label for="tipo_orden_2">Precio de menor a mayor</label> 
-								</li>
-								<li>
-									<input type="checkbox" id="tipo_orden_3" name="tipo_orden_3" value="estanteria">
-									<label for="tipo_orden_3">Precio de mayor a menor</label> 
-								</li>
-								<li>
-									<input type="checkbox" id="tipo_orden_4" name="tipo_orden_4" value="juego_mesa">
-									<label for="tipo_orden_4">A - Z</label> 
-								</li>
-								<li>
-									<input type="checkbox" id="tipo_orden_5" name="tipo_orden_5" value="mesa">
-									<label for="tipo_orden_5">Z - A</label> 
-								</li>
-								<li>
-									<input type="checkbox" id="tipo_orden_6" name="tipo_orden_6" value="ropero">
-									<label for="tipo_orden_6">Más vendidos</label> 
-								</li>
-								<li>
-									<input type="checkbox" id="tipo_orden_7" name="tipo_orden_7" value="silla">
-									<label for="tipo_orden_7">Destacados</label>
-								</li>
-								<li>
-									<input type="checkbox" id="tipo_orden_8" name="tipo_orden_8" value="sofa">
-									<label for="tipo_orden_8">Últimos ingresados</label>
-								</li>
-							</ul>
+
+
+
+						<div class="row "> <!--plantilla de productos-->
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/Comoda-california-6-cajones.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center">Lorem, ipsum dolor.</p>
+									<p class="text-center">Lorem, ipsum dolor.</p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/Comoda-california-8-cajones.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center">Lorem, ipsum dolor.</p>
+									<p class="text-center">Lorem, ipsum dolor.</p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/comoda-chicago-4-cajones.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center">Lorem, ipsum dolor.</p>
+									<p class="text-center">Lorem, ipsum dolor.</p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/escritorio-helsinki.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center">Lorem, ipsum dolor.</p>
+									<p class="text-center">Lorem, ipsum dolor.</p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/escritorio-mika.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center"></p>
+									<p class="text-center"></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/estanteria-eyra.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center"></p>
+									<p class="text-center"></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/estanteria-luca.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center"></p>
+									<p class="text-center"></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/estanteria-nordica.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center"></p>
+									<p class="text-center"></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/juego-mesa-nordica.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center"></p>
+									<p class="text-center"></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/mesa-baja-nordica.png" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center"></p>
+									<p class="text-center"></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/mesa-tv-california.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center"></p>
+									<p class="text-center"></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/mesa-tv-nordica.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center"></p>
+									<p class="text-center"></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/mesa-tv-san-francisco.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center"></p>
+									<p class="text-center"></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/ropero-nordico-estocolmo.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center"></p>
+									<p class="text-center"></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/ropero-nordico-narvik.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center"></p>
+									<p class="text-center"></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/silla-eiffel-blue.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center"></p>
+									<p class="text-center"></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/silla-eiffel-crema.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center"></p>
+									<p class="text-center"></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/silla-eiffel-mostaza.jpg" alt="">
+								</div class="text-center">
+								<div>
+									<p class="text-center"></p>
+									<p class="text-center"></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/silla-eiffel-red.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center"></p>
+									<p class="text-center"></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/silla-eiffel-yellow.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center"></p>
+									<p class="text-center"></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/sillon-eames.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center"></p>
+									<p class="text-center"></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/sofa-nordico.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center"></p>
+									<p class="text-center"></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/sofa-oslo.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center"></p>
+									<p class="text-center"></p>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4">
+								<div class="text-center">
+									<img class="img-fluid" src="imagen/productos grilla/sofa-camastro.jpg" alt="">
+								</div>
+								<div class="text-center">
+									<p class="text-center"></p>
+									<p class="text-center"></p>
+								</div>
+							</div>
+	
+	
+	
 						</div>
 					</div>
-				</div> <!--cierre modal ordenar-->
-
-
-
-			</div>
-		</main>
-
-
-
-
-
-
-
-
-		<footer> <!--pie de pagina-->
-			<hr>
-			<div class="row d-flex">
-				<div class="col-sm-12 col-md-8 col-lg-9"> <!--copyright-->
-	
-					<div>
-						<p class="small">Copyright 2019 | Todos los derechos reservados Rustimuebles.com. Chivilcoy 1635 (1191) | Capital Federal | Argentina</p>
-					</div>
-	
-					<div>
-						<p class="text-black-50 ocultar_txt"><small>Las fotos son a modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a la verificación de stock. Los precios online y los planes de financiación para los productos presentados/publicados en www.rustimuebles.com.ar y/o www.rustimuebles.com son válidos exclusivamente para la compra vía internet en las páginas antes mencionadas.Las especificaciones técnicas y descripciones están sujetas a cambios sin previo aviso.</small></p>
-					</div>
-	
+					
 				</div>
-	
-				<div class="col-md-4 col-lg-3 d-flex align-items-center justify-content-end"> <!--info variada -->
-	
-					<div>
-						<img src="imagen/ecommerce.png" class="ocultar_img ecommerce" alt="Ganadores ecommerce 2016">
-					</div>
-	
-					<div>
-						<a href="#"><img class="ocultar_img sello_cace mx-2" src="imagen/sello_cace.png" alt="Logo cace"></a>
-					</div>
-	
-					<div>
-						<a href="#"><img class="ocultar_img data_fiscal" src="imagen/data_fiscal.png" alt="Data fiscal"></a>
-					</div>
-	
+				
+
+				<div class="row"><!--siguiente pagina-->	
 				</div>
 			</div>
-		</footer>
-
-	</div>
-	
 
 
-	<script>
+
+			
+			<div id="miModal" class="modal"> <!--modal de filtrar para MOBILE-->
+				<div class="container_modal"><!--crea contenedor para visualizar por encima del flujo normal de la página-->
+					
+					<div class="header_modal">
+						<div class="title">
+							<h3>FILTRAR</h3>
+						</div>
+						<div class="close" id="close">
+							<a href="#"><span><i class="fas fa-times"></i></span></a>
+						</div>
+					</div>
+
+					<div class="body_modal">
+						<ul>
+							<li>
+								<input type="checkbox" id="tipo_producto_1" name="tipo_producto_1" value="comoda">
+								<label for="tipo_producto_1">Cómoda</label> 
+							</li>
+							<li>
+								<input type="checkbox" id="tipo_producto_2" name="tipo_producto_2" value="escritorio">
+								<label for="tipo_producto_2">Escritorios</label> 
+							</li>
+							<li>
+								<input type="checkbox" id="tipo_producto_3" name="tipo_producto_3" value="estanteria">
+								<label for="tipo_producto_3">Estanterias</label> 
+							</li>
+							<li>
+								<input type="checkbox" id="tipo_producto_4" name="tipo_producto_4" value="juego_mesa">
+								<label for="tipo_producto_4">Juego de mesa</label> 
+							</li>
+							<li>
+								<input type="checkbox" id="tipo_producto_5" name="tipo_producto_5" value="mesa">
+								<label for="tipo_producto_5">Mesas</label> 
+							</li>
+							<li>
+								<input type="checkbox" id="tipo_producto_6" name="tipo_producto_6" value="ropero">
+								<label for="tipo_producto_6">Roperos</label> 
+							</li>
+							<li>
+								<input type="checkbox" id="tipo_producto_7" name="tipo_producto_7" value="silla">
+								<label for="tipo_producto_7">Sillas</label>
+							</li>
+							<li>
+								<input type="checkbox" id="tipo_producto_8" name="tipo_producto_8" value="sofa">
+								<label for="tipo_producto_8">Sofás</label>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_modal flex">
+						<div>
+							<p class="button btn_limpiar">Limpiar filtro</p>
+						</div>
+						<div>
+							<p class="button btn_aplicar">APLICAR</p>
+						</div>
+					</div>
+
+				</div>
+			</div><!--cierre moda filtrar-->
+
+			<div id="miModal_ordenar" class="modal"> <!--modal de ordenar para MOBILE-->
+				<div class="container_modal">		<!--crea contenedor para visualizar por encima del flujo normal de la página-->
+					
+					<div class="header_modal">
+						<div class="title">
+							<h3>ORDENAR POR</h3>
+						</div>
+						<div class="close" id="close_ordenar">
+							<a href="#"><span><i class="fas fa-times"></i></span></a>
+						</div>
+					</div>
+
+					<div class="body_modal">
+						<ul>
+							<li>
+								<input type="checkbox" id="tipo_orden_1" name="tipo_orden_1" value="menMay">
+								<label for="tipo_orden_1">Precio de menor a mayor</label> 
+							</li>
+							<li>
+								<input type="checkbox" id="tipo_orden_2" name="tipo_orden_2" value="mayMen">
+								<label for="tipo_orden_2">Precio de mayor a menor</label> 
+							</li>
+							<li>
+								<input type="checkbox" id="tipo_orden_3" name="tipo_orden_3" value="AZ">
+								<label for="tipo_orden_3">A - Z</label> 
+							</li>
+							<li>
+								<input type="checkbox" id="tipo_orden_4" name="tipo_orden_4" value="ZA">
+								<label for="tipo_orden_4">Z - A</label> 
+							</li>
+							<li>
+								<input type="checkbox" id="tipo_orden_5" name="tipo_orden_5" value="masVendido">
+								<label for="tipo_orden_5">Más vendidos</label> 
+							</li>
+							<li>
+								<input type="checkbox" id="tipo_orden_6" name="tipo_orden_6" value="Destacados">
+								<label for="tipo_orden_6">Destacados</label>
+							</li>
+							<li>
+								<input type="checkbox" id="tipo_orden_7" name="tipo_orden_7" value="ultIngresado">
+								<label for="tipo_orden_7">Últimos ingresados</label> 
+							</li>
+						</ul>
+					</div>
+					<div>
+						<!--como no posee footer, mantenemos igualmente el div para el space-betweem entre los contenedores-->
+					</div>
+				</div>
+			</div> <!--cierre modal ordenar-->
+
+
+
+		</div>
+	</main>
+
+
+	<footer class="container"> <!--pie de pagina-->
+		<hr>
+		<div class="row d-flex">
+			<div class="col-sm-12 col-lg-9"> <!--copyright-->
+
+				<div>
+					<p class="small">Copyright 2019 | Todos los derechos reservados Rustimuebles.com. Chivilcoy 1635 (1191) | Capital Federal | Argentina</p>
+				</div>
+
+				<div>
+					<p class="text-black-50 ocultar_txt"><small>Las fotos son a modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a la verificación de stock. Los precios online y los planes de financiación para los productos presentados/publicados en www.rustimuebles.com.ar y/o www.rustimuebles.com son válidos exclusivamente para la compra vía internet en las páginas antes mencionadas.Las especificaciones técnicas y descripciones están sujetas a cambios sin previo aviso.</small></p>
+				</div>
+
+			</div>
+
+			<div class="col-lg-3 d-flex align-items-center justify-content-end"> <!--info variada -->
+
+				<div>
+					<img src="imagen/ecommerce.png" class="ocultar_img ecommerce" alt="Ganadores ecommerce 2016">
+				</div>
+
+				<div>
+					<a href="#"><img class="ocultar_img sello_cace mx-2" src="imagen/sello_cace.png" alt="Logo cace"></a>
+				</div>
+
+				<div>
+					<a href="#"><img class="ocultar_img data_fiscal" src="imagen/data_fiscal.png" alt="Data fiscal"></a>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+
+	<!--AREA DE SCRIPT-->
+	<script>/*funciones para los botones filtrar/ordenar*/
 		/*funciones para modal de FILTRAR*/
 		let modal = document.getElementById('miModal');
 		let abrir = document.getElementById('abrir');
@@ -616,14 +749,13 @@
 		let cerrar_ordenar = document.getElementById('close_ordenar');
 
 		abrir_ordenar.addEventListener('click', function(){
-			modal.style.display = 'block';
+			modal_ordenar.style.display = 'block';
 		});
 
 		cerrar_ordenar.addEventListener('click', function(){
-			modal.style.display = 'none';
+			modal_ordenar.style.display = 'none';
 		});
 	</script>
-
 	<!-- Option 2: Separate Popper and Bootstrap JS -->
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
