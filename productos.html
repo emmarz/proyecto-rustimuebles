@@ -259,7 +259,7 @@
 	<main>
 
 		<div class="container-fluid p-0"><!--contanier padre-->
-			<div class="container-fluid p-0"><!--contranier del body de la pagina productos-->
+			<div class="container-fluid p-0"><!--container del body de la pagina productos-->
 
 				
 				<div class="row view_mobile"><!--menu MOBILE filtrar y ordenar-->
@@ -276,7 +276,7 @@
 							<span>Ordernar</span>
 						</button>
 					</div>
-				</div><!--cierre menu filtrar y ordenar-->
+				</div><!--cierre menu MOBILE filtrar y ordenar-->
 
 
 				<div class="row flex-row"><!--contenedor del menu DESKTOP-->
@@ -326,33 +326,41 @@
 							</ul>
 						</div>
 						
-					</div>
+					</div><!--cierre barra lateral izquierda - menu-->
 
 
-					<div class="col-md-9"><!--barra lateral derecha-->
-						<div> <!--barra DESKTOP superior filtrar y ordenar-->
-							<div class="container-dropdown">
-								<button class="btn-dropdown">boton</button>
-								<div class="dropdown-content">
-									
+					<div class="col-md-9"><!--barra lateral derecha (planilla de img y barra de filtrado/ordenar)-->
+						
+						<div class="flex"><!--container barra filtrar/ordenar-->
+							<div><!--container ordenar-->
+								<div>
+									<span>Ordenar por:</span>
 								</div>
+
+								<div>
+									<div class="container-dropdown">
+										<button class="btn-dropdown">boton <i class="fas fa-angle-down"></i></button>
+
+										<div class="dropdown-content">
+											
+										</div>
+									</div>
+								</div>
+							</div><!--cierre container ordenar-->
+									
+							<div><!--container paginacion-->
+								<p>Aqui va la paginacion</p>
 							</div>
-						<div>
-								
-						<div>
-						</div>
-
-
-
-
-						<div class="row "> <!--plantilla de productos-->
+						</div> <!--cierre container barra filtrar/ordenar-->
+						
+						<div class="row"> <!--plantilla de productos-->
 							<div class="col-12 col-sm-6 col-md-4">
 								<div class="text-center">
 									<img class="img-fluid" src="imagen/productos grilla/Comoda-california-6-cajones.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center">Lorem, ipsum dolor.</p>
-									<p class="text-center">Lorem, ipsum dolor.</p>
+									<p>Lorem ipsum dolor sit.</p>
+									<p>Lorem ipsum dolor sit.</p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -360,8 +368,8 @@
 									<img class="img-fluid" src="imagen/productos grilla/Comoda-california-8-cajones.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center">Lorem, ipsum dolor.</p>
-									<p class="text-center">Lorem, ipsum dolor.</p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -369,8 +377,8 @@
 									<img class="img-fluid" src="imagen/productos grilla/comoda-chicago-4-cajones.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center">Lorem, ipsum dolor.</p>
-									<p class="text-center">Lorem, ipsum dolor.</p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -378,8 +386,8 @@
 									<img class="img-fluid" src="imagen/productos grilla/escritorio-helsinki.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center">Lorem, ipsum dolor.</p>
-									<p class="text-center">Lorem, ipsum dolor.</p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -387,8 +395,8 @@
 									<img class="img-fluid" src="imagen/productos grilla/escritorio-mika.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center"></p>
-									<p class="text-center"></p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -396,8 +404,8 @@
 									<img class="img-fluid" src="imagen/productos grilla/estanteria-eyra.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center"></p>
-									<p class="text-center"></p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -405,8 +413,8 @@
 									<img class="img-fluid" src="imagen/productos grilla/estanteria-luca.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center"></p>
-									<p class="text-center"></p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -414,8 +422,8 @@
 									<img class="img-fluid" src="imagen/productos grilla/estanteria-nordica.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center"></p>
-									<p class="text-center"></p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -423,8 +431,8 @@
 									<img class="img-fluid" src="imagen/productos grilla/juego-mesa-nordica.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center"></p>
-									<p class="text-center"></p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -432,8 +440,8 @@
 									<img class="img-fluid" src="imagen/productos grilla/mesa-baja-nordica.png" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center"></p>
-									<p class="text-center"></p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -441,8 +449,8 @@
 									<img class="img-fluid" src="imagen/productos grilla/mesa-tv-california.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center"></p>
-									<p class="text-center"></p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -450,8 +458,8 @@
 									<img class="img-fluid" src="imagen/productos grilla/mesa-tv-nordica.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center"></p>
-									<p class="text-center"></p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -459,8 +467,8 @@
 									<img class="img-fluid" src="imagen/productos grilla/mesa-tv-san-francisco.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center"></p>
-									<p class="text-center"></p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -468,8 +476,8 @@
 									<img class="img-fluid" src="imagen/productos grilla/ropero-nordico-estocolmo.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center"></p>
-									<p class="text-center"></p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -477,8 +485,8 @@
 									<img class="img-fluid" src="imagen/productos grilla/ropero-nordico-narvik.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center"></p>
-									<p class="text-center"></p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -486,8 +494,8 @@
 									<img class="img-fluid" src="imagen/productos grilla/silla-eiffel-blue.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center"></p>
-									<p class="text-center"></p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -495,17 +503,17 @@
 									<img class="img-fluid" src="imagen/productos grilla/silla-eiffel-crema.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center"></p>
-									<p class="text-center"></p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
 								<div class="text-center">
 									<img class="img-fluid" src="imagen/productos grilla/silla-eiffel-mostaza.jpg" alt="">
-								</div class="text-center">
-								<div>
-									<p class="text-center"></p>
-									<p class="text-center"></p>
+								</div>
+								<div class="text-center">
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -513,8 +521,8 @@
 									<img class="img-fluid" src="imagen/productos grilla/silla-eiffel-red.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center"></p>
-									<p class="text-center"></p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -522,8 +530,8 @@
 									<img class="img-fluid" src="imagen/productos grilla/silla-eiffel-yellow.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center"></p>
-									<p class="text-center"></p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -531,8 +539,8 @@
 									<img class="img-fluid" src="imagen/productos grilla/sillon-eames.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center"></p>
-									<p class="text-center"></p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -540,8 +548,8 @@
 									<img class="img-fluid" src="imagen/productos grilla/sofa-nordico.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center"></p>
-									<p class="text-center"></p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -549,8 +557,8 @@
 									<img class="img-fluid" src="imagen/productos grilla/sofa-oslo.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center"></p>
-									<p class="text-center"></p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
 							<div class="col-12 col-sm-6 col-md-4">
@@ -558,22 +566,20 @@
 									<img class="img-fluid" src="imagen/productos grilla/sofa-camastro.jpg" alt="">
 								</div>
 								<div class="text-center">
-									<p class="text-center"></p>
-									<p class="text-center"></p>
+									<p></p>
+									<p></p>
 								</div>
 							</div>
+						</div><!--cierre planilla-->
 	
-	
-	
-						</div>
-					</div>
+					</div><!--cierre barra lateral derecha (planilla de img y barra de filtrado/ordenar)-->
 					
-				</div>
+				</div><!--cierre contenedor del menu DESKTOP-->
 				
 
 				<div class="row"><!--siguiente pagina-->	
 				</div>
-			</div>
+			</div><!--cierre contranier del body de la pagina productos-->
 
 
 
@@ -690,7 +696,7 @@
 
 
 
-		</div>
+		</div> <!--cierre container padre-->
 	</main>
 
 

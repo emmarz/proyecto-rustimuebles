@@ -23,6 +23,12 @@
         from{top:-330px; opacity:0;}
         to{top:0; opacity:1;}
     }
+        .flex{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
         .header_modal{
             display: flex;
             flex-direction: row;
@@ -71,24 +77,17 @@
                     text-decoration: underline;
                     color: grey;
                 }
-        
+.btn-dropdown{
+    background-color: skyblue;
+    border-radius: 2px;
+    border: none;
+    border-bottom:solid 1px red;
+    padding: 10px;
+    margin: 5px;
+    height: 34px;
+    width: 250px;
 
-
-
-
-
-.flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: nowrap;
 }
-
-
-
-
-
-
 
 
 
