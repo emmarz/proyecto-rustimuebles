@@ -214,9 +214,9 @@
 </head>
 <body>
 
-	<header class="container-fluid padre">
+	<header class="container-fluid padre p-0">
 
-		<nav class="navbar navbar-expand-md navbar-dark"> <!--menu navegacion-->
+		<nav class="navbar navbar-expand-md navbar-dark p-1"> <!--menu navegacion-->
 			<div class="container-fluid">
 				<a class="navbar-brand" href="index2.html"><i class="fas fa-home"></i>RUSTIMUEBLES</a>
 				
@@ -280,14 +280,14 @@
 
 
 				<div class="row flex-row"><!--contenedor del menu DESKTOP-->
-					<div class="col-md-3"><!--barra lateral izquierda menu-->
+					<div class="col-md-3 view_desktop"><!--barra lateral izquierda menu-->
 
 
-						<div><!--titulo representativo de los productos-->
-							<p class="h6 text-center">Todos los productos</p>
+						<div class="py-4"><!--titulo representativo de los productos-->
+							<p class="h5 text-center">Todos los productos</p>
 						</div>
 
-						<div><!--lista del filtrado-->
+						<div class="py-4 list_filter_md"><!--lista del filtrado-->
 							<ul>
 								<li>
 									<label for="tipo_producto_1">
@@ -331,15 +331,18 @@
 
 					<div class="col-md-9"><!--barra lateral derecha (planilla de img y barra de filtrado/ordenar)-->
 						
-						<div class="flex"><!--container barra filtrar/ordenar-->
+						<div class="flex p-3 view_desktop"><!--container barra filtrar/ordenar-->
 							<div><!--container ordenar-->
 								<div>
-									<span>Ordenar por:</span>
+									<span class="text-black-50 small">Ordenar por:</span>
 								</div>
 
 								<div>
 									<div class="container-dropdown">
-										<button class="btn-dropdown">boton <i class="fas fa-angle-down"></i></button>
+										<button class="btn-dropdown">
+											<span>boton</span>
+											<i class="fas fa-angle-down"></i>
+										</button>
 
 										<div class="dropdown-content">
 											
@@ -348,12 +351,35 @@
 								</div>
 							</div><!--cierre container ordenar-->
 									
-							<div><!--container paginacion-->
-								<p>Aqui va la paginacion</p>
+							<div class="container_pagination"><!--container paginacion-->
+								<div class="pb-2">
+									<span class="text-black-50 small pr-3">Páginas:</span>
+								</div>
+
+								<div class="list_pagination_md"><!--barra paginación-->
+									<div class="small">
+										<a href="#"><i class="fas fa-chevron-left"></i></a>
+									</div>
+									<ol class="small">
+										<li>
+											<a href="#">1</a>
+										</li>
+										<li>
+											<a href="#">2</a>
+										</li>
+										<li>
+											<a href="#">3</a>
+										</li>
+									</ol>
+									<div class="small">
+										<a href="#"><i class="fas fa-chevron-right"></i></a>
+									</div>
+								</div>
 							</div>
 						</div> <!--cierre container barra filtrar/ordenar-->
 						
-						<div class="row"> <!--plantilla de productos-->
+
+						<div class="row justify-content-center grid_productos"> <!--plantilla de productos-->
 							<div class="col-12 col-sm-6 col-md-4">
 								<div class="text-center">
 									<img class="img-fluid" src="imagen/productos grilla/Comoda-california-6-cajones.jpg" alt="">
@@ -571,14 +597,38 @@
 								</div>
 							</div>
 						</div><!--cierre planilla-->
-	
+						
+						<div class="container_pagination justify-content-center"><!--siguiente pagina-->
+							<div class="pb-2">
+								<span class="text-black-50 small pr-3">Páginas:</span>
+							</div>
+							<div class="list_pagination_md">
+								<div class="small">
+									<a href="#"><i class="fas fa-chevron-left"></i></a>
+								</div>
+								<ol class="small">
+									<li>
+										<a href="#">1</a>
+									</li>
+									<li>
+										<a href="#">2</a>
+									</li>
+									<li>
+										<a href="#">3</a>
+									</li>
+								</ol>
+								<div class="small">
+									<a href="#"><i class="fas fa-chevron-right"></i></a>
+								</div>
+							</div>
+						</div><!--cierre siguiente pagina-->
+
 					</div><!--cierre barra lateral derecha (planilla de img y barra de filtrado/ordenar)-->
 					
 				</div><!--cierre contenedor del menu DESKTOP-->
 				
 
-				<div class="row"><!--siguiente pagina-->	
-				</div>
+				
 			</div><!--cierre contranier del body de la pagina productos-->
 
 
