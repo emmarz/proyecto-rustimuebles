@@ -259,7 +259,7 @@
 	<main>
 
 		<div class="container-fluid p-0"><!--contanier padre-->
-			<div class="container-fluid p-0"><!--container del body de la pagina productos-->
+			<div class="container-xl p-0"><!--container del body de la pagina productos-->
 
 				
 				<div class="row view_mobile"><!--menu MOBILE filtrar y ordenar-->
@@ -279,7 +279,7 @@
 				</div><!--cierre menu MOBILE filtrar y ordenar-->
 
 
-				<div class="row flex-row"><!--contenedor del menu DESKTOP-->
+				<div class="row flex-row max_width"><!--contenedor del menu DESKTOP-->
 					<div class="col-md-3 view_desktop"><!--barra lateral izquierda menu-->
 
 
@@ -338,15 +338,38 @@
 								</div>
 
 								<div>
-									<div class="container-dropdown">
-										<button class="btn-dropdown">
-											<span>boton</span>
-											<i class="fas fa-angle-down"></i>
+									<div class="container_dropdown">
+										<button class="btn_dropdown flex" onclick="desplegar_menu()">
+											<div>
+												<span class="font-weight-bold">Destacados</span>
+											</div>
+											<div>
+												<i class="fas fa-angle-down"></i>
+											</div>
 										</button>
-
-										<div class="dropdown-content">
-											
-										</div>
+										<ul class="dropdown_content">
+											<li class="option_content ocultar_contenido">
+												<p class="pl-4">Precio de mayor a menor</p>
+											</li>
+											<li class="option_content ocultar_contenido">
+												<p class="pl-4">Precio de menor a mayor</p>
+											</li>
+											<li class="option_content ocultar_contenido">
+												<p class="pl-4">A - Z</p>
+											</li>
+											<li class="option_content ocultar_contenido">
+												<p class="pl-4">Z - A</p>
+											</li>
+											<li class="option_content ocultar_contenido">
+												<p class="pl-4">Más vendidos</p>
+											</li>
+											<li class="option_content ocultar_contenido">
+												<p class="pl-4">Destacados</p>
+											</li>
+											<li class="option_content ocultar_contenido">
+												<p class="pl-4">Últimos ingresados</p>	
+											</li>
+										</ul>
 									</div>
 								</div>
 							</div><!--cierre container ordenar-->
@@ -634,7 +657,7 @@
 
 
 			
-			<div id="miModal" class="modal"> <!--modal de filtrar para MOBILE-->
+			<div id="miModal" class="modal"> <!--modal filtrar para MOBILE-->
 				<div class="container_modal"><!--crea contenedor para visualizar por encima del flujo normal de la página-->
 					
 					<div class="header_modal">
@@ -694,7 +717,7 @@
 				</div>
 			</div><!--cierre moda filtrar-->
 
-			<div id="miModal_ordenar" class="modal"> <!--modal de ordenar para MOBILE-->
+			<div id="miModal_ordenar" class="modal"> <!--modal ordenar para MOBILE-->
 				<div class="container_modal">		<!--crea contenedor para visualizar por encima del flujo normal de la página-->
 					
 					<div class="header_modal">
@@ -811,6 +834,14 @@
 		cerrar_ordenar.addEventListener('click', function(){
 			modal_ordenar.style.display = 'none';
 		});
+		/*funciona desplegar menu ordenar DESKTOP*/
+		function desplegar_menu(){
+			console.log('clic en boton ordenar');
+			var ancla = document.getElementsByClassName('option_content');
+			for(var i=0; i < ancla.length; i++){
+				ancla[i].classList.toggle('ocultar_contenido');
+			}
+		}
 	</script>
 	<!-- Option 2: Separate Popper and Bootstrap JS -->
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
