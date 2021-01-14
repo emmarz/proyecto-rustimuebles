@@ -154,7 +154,7 @@ li{
 
 
 /*medias*/
-@media (min-width: 768px ){
+@media (min-width: 768px){
     .view_mobile{
         display: none;
     }
@@ -163,6 +163,7 @@ li{
     }
 
 }
+
 @media (max-width: 768px){
     .view_desktop{
         display: none;

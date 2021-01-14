@@ -1,60 +1,22 @@
-menu {
-    font-family: 'Spartan', sans-serif;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container_data{
+    background-color: grey;
+    color: white;
 }
-    .introduccion, .salon_ventas, .reserva{
-        width: 971px;
-    } 
+a{
+    text-decoration-style: none;
+    color: white;
+}
 
-    .introduccion{
-        display: flex;
+/*MEDIAS*/
+@media (max-width: 575px){
+    .img_logo{
+        height: 150px;
+        width: 186px;
+        padding: 10px 0px;
     }
-
-        .imagen_logo{
-            padding-top: 30px;
-        }
-
-    .salon_ventas {
-        height: 497px;
+}
+@media (min-width: 576px){
+    .img_logo{
+        max-height: 250px;
     }
-
-    .reserva {
-        background-color: rgb(107, 105, 105);
-        color: white;
-        text-align: center;
-        padding-top: 20px;
-        font-size: 16px;
-    }
-    .whatsapp{
-        position: fixed;
-        bottom: 20px;
-        right: 15px;
-    }
-        .texto120{
-            font-size: 120%;
-        }
-        .texto140{
-            font-size: 140%;
-        }
-        .texto160{
-            font-size: 160%;
-        }
-        h1{
-            font-size: 200%;
-        }
-        h3{
-            font-size: 170%;
-        }
-        p a{
-            color: white;
-            text-decoration: none;
-        }
-        p a:hover{
-            color: rgb(121, 193, 226);
-        }
-
-
-
+}
