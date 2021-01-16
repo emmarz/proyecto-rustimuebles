@@ -1,5 +1,5 @@
 .container_data{
-    background-color: grey;
+    background-color: rgb(63, 67, 73);
     color: white;
 }
 a{
@@ -10,7 +10,6 @@ a{
 /*MEDIAS*/
 @media (max-width: 575px){
     .img_logo{
-        height: 150px;
         width: 186px;
         padding: 10px 0px;
     }

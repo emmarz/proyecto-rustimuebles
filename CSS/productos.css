@@ -82,8 +82,12 @@ li{
                 }
 
 /*barra lateral derecha*/
-.grid_productos div{
+.grid_productos > div{
     max-width: 250px;
+}
+.grid_productos div div + div{
+    border: solid 1px rgba(221, 219, 219, 0.8);
+    margin-bottom: 10px;
 }
 
 .container_pagination{
@@ -110,7 +114,7 @@ li{
             color: black;
             text-decoration: none;
             border-radius: 50%;
-            background-color: grey;
+            background-color:rgb(255, 204, 0);
         }
 .list_filter_md li{
     padding: 10px 0px;
@@ -149,10 +153,6 @@ li{
     max-width: 1050px !important;
 }
 
-
-
-
-
 /*medias*/
 @media (min-width: 768px){
     .view_mobile{
@@ -163,7 +163,6 @@ li{
     }
 
 }
-
 @media (max-width: 768px){
     .view_desktop{
         display: none;
