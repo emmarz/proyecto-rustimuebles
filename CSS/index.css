@@ -1,18 +1,3 @@
-/*          HEADER         */
-/*.padre{
-    background-color:rgb(63, 67, 73);
-}
-header a{
-    color: rgb(133, 157, 170) !important;
-}
-header button{
-    border-color: rgb(133, 157, 170) !important;
-}
-header a:hover{
-    color: #c07373 !important;
-}*/
-
-
 /*bloque PROMOCIONES*/
 .promociones{
     display: flex;
@@ -30,7 +15,7 @@ header a:hover{
         transition: 1s;/*velocidad en el efecto*/
     }
     .img_promo{
-        width: 47.1vw;
+        width:; /*47.1vw*/
     }
     .img_promo :hover{
         filter: grayscale(80%);
@@ -45,7 +30,7 @@ header a:hover{
     max-width: 250px;
 }
 .grid_productos div div + div{
-    border: solid 1px rgba(221, 219, 219, 0.8);
+    border: solid 1px rgba(221, 219, 219, 0.8); /*gainsboro*/
     margin-bottom: 10px;
 }
 .grid_footer p a{
@@ -59,11 +44,11 @@ header a:hover{
 
     /*************HATSAPP********/
 .whatsapp img{
-width: 70px;
-height: 70px;
+width: 90px;
+height: 90px;
 position: fixed;
-bottom: 20px;
-right: 25px;
+bottom: 50px;
+right: 50px;
 z-index: +1;
 }  
 .whatsapp img:hover{
