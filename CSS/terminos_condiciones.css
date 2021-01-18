@@ -1,12 +1,9 @@
 main{
-    margin: 10px 75px;
+    margin: 10px 25px;
     padding: 0px;
 }
 h1{
     text-align: center;
-}
-p{
-    text-align: justify;
 }
 .cambio_producto p{
     border: 1px solid rgb(250, 235, 204);
