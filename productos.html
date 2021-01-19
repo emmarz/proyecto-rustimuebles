@@ -216,44 +216,45 @@
 </head>
 <body>
 
-	<header class="container-fluid container-header p-0">
-
-		<nav class="navbar navbar-expand-md navbar-dark p-1"> <!--menu navegacion-->
-			<div class="container-fluid">
-				<a class="navbar-brand" href="index.html"><img src="imagen/sunflower.png" alt="girasol">RUSTIMUEBLES</a>
-				
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-				</button>
-				
-				<div class="collapse navbar-collapse text-center" id="navbarTogglerDemo02">
-					<ul class="navbar-nav mr-auto mb-2 mb-lg-0 justify-content-lg-center flex-grow-1">
-						<li class="nav-item active">
-							<a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="productos.html">Productos</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="quienes_somos.html">Quienes somos</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="terminos_condiciones.html">Términos y condiciones</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="contactos.html">Contacto</a>
-						</li>
-					</ul>
-
-					<div><!--redes sociales-->
-						<a class="btn btn-lg" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
-						<a class="btn btn-lg" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a> <!--btn-outline-dark  para darle un borde al boton-->
-					</div>
+	<header>
+		<div class="container-fluid header__contenedor p-0">
+			<nav class="navbar navbar-expand-md navbar-dark"> <!--menu navegacion-->
+				<div class="container-fluid">
+				  <a class="navbar-brand" href="index.html"><img src="imagen/sunflower.png" alt="girasol">RUSTIMUEBLES</a>
+				  
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  
+				  <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo02">
+						<ul class="navbar-nav mr-auto mb-2 mb-lg-0 justify-content-lg-center flex-grow-1">
+							<li class="nav-item active">
+								<a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="productos.html">Productos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="quienes_somos.html">Quienes somos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="terminos_condiciones.html">Términos y condiciones</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contactos.html">Contacto</a>
+							</li>
+						</ul>
+	
+						<div><!--redes sociales-->
+							<a class="btn btn-lg" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+							<a class="btn btn-lg" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+						</div>
+				  </div>
 				</div>
-			</div>
-			</nav>
-		
-	</header>
+			</nav>    
+		</div>
+          
+    </header>
 
 	<main>
 
@@ -261,7 +262,7 @@
 			<div class="container-xl p-0"><!--container del body de la pagina productos-->
 
 				
-				<div class="row view_mobile"><!--menu MOBILE filtrar y ordenar-->
+				<div class="row view_mobile m-0"><!--menu MOBILE filtrar y ordenar-->
 					<div id="abrir" class="col-6 px-0 text-center">
 						<button type="button" class="btn btn-block text-nowrap">
 							<i class="fas fa-filter"></i>
@@ -278,7 +279,7 @@
 				</div><!--cierre menu MOBILE filtrar y ordenar-->
 
 
-				<div class="row flex-row max_width"><!--contenedor del menu DESKTOP-->
+				<div class="row flex-row max_width m-0"><!--contenedor del menu DESKTOP-->
 					<div class="col-md-3 view_desktop"><!--barra lateral izquierda menu-->
 
 
@@ -304,7 +305,7 @@
 								</li>
 								<li>
 									<input type="checkbox" id="tipo_producto_4" name="tipo_producto_4" value="juego_mesa">
-									<label for="tipo_producto_4">Juego de mesa</label> 
+									<label for="tipo_producto_4">Set de mesa</label> 
 								</li>
 								<li>
 									<input type="checkbox" id="tipo_producto_5" name="tipo_producto_5" value="mesa">
@@ -401,7 +402,7 @@
 						</div> <!--cierre container barra filtrar/ordenar-->
 						
 
-						<div class="row justify-content-center grid_productos"> <!--plantilla de productos-->
+						<div class="row justify-content-center main__grid_productos"> <!--plantilla de productos-->
 							<div class="col-12 col-sm-6 col-md-4">
 								<div class="text-center">
 									<img class="img-fluid" src="imagen/productos grilla/Comoda-california-6-cajones.jpg" alt="">
@@ -744,39 +745,31 @@
 		</div> <!--cierre container container-header-->
 	</main>
 
-
 	<footer class="container"> <!--pie de pagina-->
-		<hr>
-		<div class="row d-flex">
-			<div class="col-sm-12 col-lg-9"> <!--copyright-->
+        <hr>
+        <div class="row d-flex">
+            <div class="col-sm-12 col-lg-9"> <!--copyright-->
+                <div>
+                    <p class="small">Copyright 2019 | Todos los derechos reservados Rustimuebles.com. Chivilcoy 1635 (1191) | Capital Federal | Argentina</p>
+                </div>
+                <div>
+                    <p class="text-black-50 ocultar_txt"><small>Las fotos son a modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a la verificación de stock. Los precios online y los planes de financiación para los productos presentados/publicados en www.rustimuebles.com.ar y/o www.rustimuebles.com son válidos exclusivamente para la compra vía internet en las páginas antes mencionadas.Las especificaciones técnicas y descripciones están sujetas a cambios sin previo aviso.</small></p>
+                </div>
+            </div>
 
-				<div>
-					<p class="small">Copyright 2019 | Todos los derechos reservados Rustimuebles.com. Chivilcoy 1635 (1191) | Capital Federal | Argentina</p>
-				</div>
-
-				<div>
-					<p class="text-black-50 ocultar_txt"><small>Las fotos son a modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a la verificación de stock. Los precios online y los planes de financiación para los productos presentados/publicados en www.rustimuebles.com.ar y/o www.rustimuebles.com son válidos exclusivamente para la compra vía internet en las páginas antes mencionadas.Las especificaciones técnicas y descripciones están sujetas a cambios sin previo aviso.</small></p>
-				</div>
-
-			</div>
-
-			<div class="col-lg-3 d-flex align-items-center justify-content-end"> <!--info variada -->
-
-				<div>
-					<img src="imagen/ecommerce.png" class="ocultar_img ecommerce" alt="Ganadores ecommerce 2016">
-				</div>
-
-				<div>
-					<a href="#"><img class="ocultar_img sello_cace mx-2" src="imagen/sello_cace.png" alt="Logo cace"></a>
-				</div>
-
-				<div>
-					<a href="#"><img class="ocultar_img data_fiscal" src="imagen/data_fiscal.png" alt="Data fiscal"></a>
-				</div>
-
-			</div>
-		</div>
-	</footer>
+            <div class="col-lg-3 d-flex align-items-center justify-content-end"> <!--info imágenes-->
+                <div>
+                    <img src="imagen/ecommerce.png" class="ocultar_img ecommerce" alt="Ganadores ecommerce 2016">
+                </div>
+                <div>
+                    <a href="#"><img class="ocultar_img sello_cace mx-2" src="imagen/sello_cace.png" alt="Logo cace"></a>
+                </div>
+                <div>
+                    <a href="#"><img class="ocultar_img data_fiscal" src="imagen/data_fiscal.png" alt="Data fiscal"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 	<!--funciones creadas-->

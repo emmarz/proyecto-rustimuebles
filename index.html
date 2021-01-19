@@ -219,53 +219,54 @@
 
   <body>
 
-    <header class="container-fluid container-header">
-        <nav class="navbar navbar-expand-md navbar-dark"> <!--menu navegacion-->
-            <div class="container-fluid">
-			  <a class="navbar-brand" href="index.html"><img src="imagen/sunflower.png" alt="girasol">RUSTIMUEBLES</a>
-			  
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-			  </button>
-			  
-              <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0 justify-content-lg-center flex-grow-1">
-                        <li class="nav-item active">
-                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="quienes_somos.html">Quienes somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="terminos_condiciones.html">Términos y condiciones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contactos.html">Contacto</a>
-                        </li>
-                    </ul>
-
-                    <div><!--redes sociales-->
-                        <a class="btn btn-lg" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
-                        <a class="btn btn-lg" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-                    </div>
-              </div>
-            </div>
-        </nav>      
+    <header>
+		<div class="container-fluid header__contenedor p-0">
+			<nav class="navbar navbar-expand-md navbar-dark"> <!--menu navegacion-->
+				<div class="container-fluid">
+				  <a class="navbar-brand" href="index.html"><img src="imagen/sunflower.png" alt="girasol">RUSTIMUEBLES</a>
+				  
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  
+				  <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo02">
+						<ul class="navbar-nav mr-auto mb-2 mb-lg-0 justify-content-lg-center flex-grow-1">
+							<li class="nav-item active">
+								<a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="productos.html">Productos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="quienes_somos.html">Quienes somos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="terminos_condiciones.html">Términos y condiciones</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contactos.html">Contacto</a>
+							</li>
+						</ul>
+	
+						<div><!--redes sociales-->
+							<a class="btn btn-lg" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+							<a class="btn btn-lg" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+						</div>
+				  </div>
+				</div>
+			</nav>    
+		</div>
+          
     </header>
-
-
 
     <main>
 
-        <div class="container-xl px-0"> <!--portada-->
+        <div class="container-xl px-0"><!--portada-->
             <img src="imagen/portada.jpg" class="img-fluid" alt="portada de bienvenida">
         </div>
 
-        <div class="container-xl bg-dark text-center p-0"> <!--carousel-->
-            <div class="row">
+        <div class="container-xl bg-dark text-center p-0"><!--carousel-->
+            <div class="row m-0">
                 <div class="col">
     
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -282,7 +283,7 @@
                             <img src="imagen/carousel/dormitorio(1).jpg" class="img-fluid"alt="dormitorio">
                           </div>
                           <div class="carousel-item">
-                            <img src="imagen/carousel/living(1).jpg" class="img-fluid"alt="living"> <!--d-block w-100-->
+                            <img src="imagen/carousel/living(1).jpg" class="img-fluid"alt="living">
                           </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -300,7 +301,7 @@
         </div><!--cierre carousel-->
 
         <div class="container-xl m-auto p-0"><!--promociones-->
-        	<div class="promociones">
+        	<div class="main__promociones">
 				<div>
 					<img src="imagen/promocion1.png" class="w-100" alt="pago con descuento y cuotas">
 				</div>
@@ -309,19 +310,20 @@
 				</div>
 			</div>
             <div>
-				<img src="imagen/promocion3.png" class="img_promo w-100" alt="AHORA 12">
+				<img src="imagen/promocion3.png" class="main__img_promo w-100" alt="AHORA 12">
 			</div> 
 		</div> <!--cierre promociones-->
+
 		
 		<div class="container-lg mt-5"><!--grilla-->
 
 			<div class="row">
-				<div class="col grid_header">
+				<div class="col main__grid_header">
 					<p class="h2 text-center">Productos</p>
 				</div>
 			</div>
 
-			<div class="row justify-content-center grid_productos"> <!--plantilla de productos-->
+			<div class="row justify-content-center main__grid_productos">
 				<div class="col-12 col-sm-6 col-md-4">
 					<div class="text-center">
 						<img class="img-fluid" src="imagen/productos grilla/comoda-chicago-4-cajones.jpg" alt="producto">
@@ -394,9 +396,9 @@
 						<p>$18999,<sup>99</sup></p>
 					</div>
 				</div>
-			</div><!--cierre planilla-->
+			</div>
 
-			<div class="row grid_footer">
+			<div class="row main__grid_footer">
 				<div class="col">
 					<p class="h2 text-center"><a href="productos.html">VER TODO</a></p>
 				</div>
@@ -407,7 +409,7 @@
 
 
 
-        <div class="whatsapp"> <!--chat whatsapp-->
+        <div class="main__whatsapp"> <!--chat whatsapp-->
 			<a href="https://api.whatsapp.com/send?phone=541168094195&text=Hola!%20Quiero%20hacer%20una%20consulta">
 				<img src="imagen/whatsapp.png" alt="logo Whatsapp">
 			</a>
@@ -415,37 +417,28 @@
 
     </main>
 
-
-    
     <footer class="container"> <!--pie de pagina-->
         <hr>
         <div class="row d-flex">
             <div class="col-sm-12 col-lg-9"> <!--copyright-->
-
                 <div>
                     <p class="small">Copyright 2019 | Todos los derechos reservados Rustimuebles.com. Chivilcoy 1635 (1191) | Capital Federal | Argentina</p>
                 </div>
-
                 <div>
                     <p class="text-black-50 ocultar_txt"><small>Las fotos son a modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a la verificación de stock. Los precios online y los planes de financiación para los productos presentados/publicados en www.rustimuebles.com.ar y/o www.rustimuebles.com son válidos exclusivamente para la compra vía internet en las páginas antes mencionadas.Las especificaciones técnicas y descripciones están sujetas a cambios sin previo aviso.</small></p>
                 </div>
-
             </div>
 
-            <div class="col-lg-3 d-flex align-items-center justify-content-end"> <!--info variada -->
-
+            <div class="col-lg-3 d-flex align-items-center justify-content-end"> <!--info imágenes-->
                 <div>
                     <img src="imagen/ecommerce.png" class="ocultar_img ecommerce" alt="Ganadores ecommerce 2016">
                 </div>
-
                 <div>
                     <a href="#"><img class="ocultar_img sello_cace mx-2" src="imagen/sello_cace.png" alt="Logo cace"></a>
                 </div>
-
                 <div>
                     <a href="#"><img class="ocultar_img data_fiscal" src="imagen/data_fiscal.png" alt="Data fiscal"></a>
                 </div>
-
             </div>
         </div>
     </footer>
