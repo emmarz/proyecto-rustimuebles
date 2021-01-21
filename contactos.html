@@ -257,47 +257,73 @@
     </header>
 
 	<main>
-		<div class="contenedor_form"> <!--formulario de contacto-->
-			<form class="form_first" action="" method="post">
-				<fieldset>
-					<legend> <h1 class="escalar_titulo">Contactanos</h1> </legend>
-					<p>Los campos con un <strong> <abbr title="requerido">(*)</abbr> </strong> son obligatorios.</p>
+		<div class="container-lg">
+			<div class="contenedor_form"> <!--formulario de contacto-->
+				<form action="#" method="GET">
+					<fieldset>
+						<div class="form_header">
+							<legend> <h1>Contactanos</h1> </legend>
+							<p><small>Los campos con un <strong>(*)</strong> son obligatorios.</small></p>
+						</div>
 
-					<section>
-						<p>
-							<label for="name">
-								<span>Nombre:</span>
-								<strong><abbr title="requerido">*</abbr></strong>
+						<div class="form_body">
+							<div>
+								<label for="name">
+									<span>Nombre:<strong>(*)</strong></span>
+									<input class="w_100" type="text" id="name" name="user-name" placeholder="Su nombre" maxlength="20" required>
+								</label>
+							</div>
+							<div>
+								<label for="last-name">
+									<span>Apellido:<strong>(*)</strong></span>
+									<input class="w_100" type="text" id="last-name" name="user-last-name" placeholder="Su apellido" maxlength="20" required>
+								</label>
+							</div>
+							<div>
+								<label for="email">
+									<span>email:<strong>(*)</strong></span>
+									<input class="w_100" type="email" id="email" name="email" placeholder="email@example.com" maxlength="50" required>
+								</label>
+							</div>
+							<div>
+								<label for="celular">
+									<span>celular:</span>
+									<input class="w_100" type="tel" id="celular" name="celular" placeholder="(sin 0 ni 15) 1168094195" pattern="[0-9]{10}" maxlength="10">
+								</label>
+							</div>
+							<div>
+								<label for="contact-type">
+									<span>Tipo de contacto:</span>
+								<select  name="contacto_clasificacion" id="contact-type">
+									<option value="S">Consulta</option>
+									<option value="C">Reclamo</option>
+									<option value="D">Presupuesto</option>
+								</select>
 							</label>
-							<input type="text" id="name" name="user-name">
-						</p>
-						<p>
-							<label for="last-name">
-								<span>Apellido:</span>
-								<strong><abbr title="requerido">*</abbr></strong>
-								<input type="text" id="last-name" name="user-last-name">
-							</label>
-						</p>
-						<p>
-							<select name="Estado civil" id="state">
-								<option value="S">Soltero/a</option>
-								<option value="C">Casado/a</option>
-								<option value="D">Divorciado/a</option>
-							</select>
-						</p>
-						<p>
-							<label for="newsletter"><span>Desea recibir el Newsletter?</span></label>
-							<input type="checkbox" id="newsletter" name="sent-newsletter" checked>
-						</p>
-						<p>
-							<textarea id="msg" name="user-msg" cols="50" rows="7" autofocus="true">Escriba comentario</textarea>
-						</p>
-						<input type="submit" value="Enviar formulario">
-						<input type="reset" value="Limpiar formulario">
-					</section>
-				</fieldset>
-			</form>
+							</div>
+							<div>
+								<label for="newsletter">
+									<span>Desea recibir el Newsletter?</span>
+									<input  type="checkbox" id="newsletter" name="sent-newsletter" checked>
+								</label>
+							</div>
+							<div>
+								<textarea id="msg" name="user-msg" cols="30" rows="6" autofocus="true" placeholder="Escriba mensaje" maxlength="400" required></textarea>
+							</div>
+						</div>
+						<div class="form_footer">
+							<input  type="submit" value="Enviar">
+							<input  type="reset" value="Limpiar">
+						</div>
+
+					</fieldset>
+				</form>
+			</div>
+			<div>
+				<iframe class="iframe_ubicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.4214243477313!2d-58.49598088423657!3d-34.61878916580375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9db249e5677%3A0xd40079bcd3ab81bf!2sChivilcoy%201635%2C%20C1407%20CABA!5e0!3m2!1ses-419!2sar!4v1611139283320!5m2!1ses-419!2sar" width="1200" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
 		</div>
+		
 	</main>
 
 
@@ -309,19 +335,19 @@
                     <p class="small">Copyright 2019 | Todos los derechos reservados Rustimuebles.com. Chivilcoy 1635 (1191) | Capital Federal | Argentina</p>
                 </div>
                 <div>
-                    <p class="text-black-50 ocultar_txt"><small>Las fotos son a modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a la verificación de stock. Los precios online y los planes de financiación para los productos presentados/publicados en www.rustimuebles.com.ar y/o www.rustimuebles.com son válidos exclusivamente para la compra vía internet en las páginas antes mencionadas.Las especificaciones técnicas y descripciones están sujetas a cambios sin previo aviso.</small></p>
+                    <p class="text-black-50 footer__ocultar_txt"><small>Las fotos son a modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a la verificación de stock. Los precios online y los planes de financiación para los productos presentados/publicados en www.rustimuebles.com.ar y/o www.rustimuebles.com son válidos exclusivamente para la compra vía internet en las páginas antes mencionadas.Las especificaciones técnicas y descripciones están sujetas a cambios sin previo aviso.</small></p>
                 </div>
             </div>
 
             <div class="col-lg-3 d-flex align-items-center justify-content-end"> <!--info imágenes-->
                 <div>
-                    <img src="imagen/ecommerce.png" class="ocultar_img ecommerce" alt="Ganadores ecommerce 2016">
+                    <img src="imagen/ecommerce.png" class="footer__ocultar_img footer__ecommerce" alt="Ganadores footer__ecommerce 2016">
                 </div>
                 <div>
-                    <a href="#"><img class="ocultar_img sello_cace mx-2" src="imagen/sello_cace.png" alt="Logo cace"></a>
+                    <a href="#"><img class="footer__ocultar_img footer__sello_cace mx-2" src="imagen/sello_cace.png" alt="Logo cace"></a>
                 </div>
                 <div>
-                    <a href="#"><img class="ocultar_img data_fiscal" src="imagen/data_fiscal.png" alt="Data fiscal"></a>
+                    <a href="#"><img class="footer__ocultar_img footer__data_fiscal" src="imagen/data_fiscal.png" alt="Data fiscal"></a>
                 </div>
             </div>
         </div>

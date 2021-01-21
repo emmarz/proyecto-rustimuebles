@@ -258,10 +258,9 @@
 
 	<main>
 
-		<div class="container-fluid p-0"><!--contanier container-header-->
+		<div class="container-fluid p-0"><!--contanier padre-->
 			<div class="container-xl p-0"><!--container del body de la pagina productos-->
-
-				
+	
 				<div class="row view_mobile m-0"><!--menu MOBILE filtrar y ordenar-->
 					<div id="abrir" class="col-6 px-0 text-center">
 						<button type="button" class="btn btn-block text-nowrap">
@@ -278,61 +277,71 @@
 					</div>
 				</div><!--cierre menu MOBILE filtrar y ordenar-->
 
-
 				<div class="row flex-row max_width m-0"><!--contenedor del menu DESKTOP-->
 					<div class="col-md-3 view_desktop"><!--barra lateral izquierda menu-->
-
-
-						<div class="py-4"><!--titulo representativo de los productos-->
+						<div class="py-4">
 							<p class="h5 text-center">Todos los productos</p>
 						</div>
 
 						<div class="py-4 list_filter_md"><!--lista del filtrado-->
 							<ul>
-								<li>
+								<li>	
 									<label for="tipo_producto_1">
 										<input type="checkbox" id="tipo_producto_1" name="tipo_producto_1" value="comoda">
 										<span>Cómoda</span>
 									</label> 
 								</li>
 								<li>
-									<input type="checkbox" id="tipo_producto_2" name="tipo_producto_2" value="escritorio">
-									<label for="tipo_producto_2">Escritorios</label> 
+									<label for="tipo_producto_2">
+										<input type="checkbox" id="tipo_producto_2" name="tipo_producto_2" value="escritorio">
+										<span>Escritorios</span>
+									</label> 
 								</li>
 								<li>
-									<input type="checkbox" id="tipo_producto_3" name="tipo_producto_3" value="estanteria">
-									<label for="tipo_producto_3">Estanterias</label> 
+									<label for="tipo_producto_3">
+										<input type="checkbox" id="tipo_producto_3" name="tipo_producto_3" value="estanteria">
+										<span>Estanterias</span>
+									</label> 
 								</li>
 								<li>
-									<input type="checkbox" id="tipo_producto_4" name="tipo_producto_4" value="juego_mesa">
-									<label for="tipo_producto_4">Set de mesa</label> 
+									<label for="tipo_producto_4">
+										<input type="checkbox" id="tipo_producto_4" name="tipo_producto_4" value="juego_mesa">
+										<span>Juego de mesa</span>
+									</label> 
 								</li>
 								<li>
-									<input type="checkbox" id="tipo_producto_5" name="tipo_producto_5" value="mesa">
-									<label for="tipo_producto_5">Mesas</label> 
+									<label for="tipo_producto_5">
+										<input type="checkbox" id="tipo_producto_5" name="tipo_producto_5" value="mesa">
+										<span>Mesas</span>
+									</label> 
 								</li>
 								<li>
-									<input type="checkbox" id="tipo_producto_6" name="tipo_producto_6" value="ropero">
-									<label for="tipo_producto_6">Roperos</label> 
+									<label for="tipo_producto_6">
+										<input type="checkbox" id="tipo_producto_6" name="tipo_producto_6" value="ropero">
+										<span>Roperos</span>
+									</label> 
 								</li>
 								<li>
-									<input type="checkbox" id="tipo_producto_7" name="tipo_producto_7" value="silla">
-									<label for="tipo_producto_7">Sillas</label>
+									<label for="tipo_producto_7">
+										<input type="checkbox" id="tipo_producto_7" name="tipo_producto_7" value="silla">
+										<span>Sillas</span>
+									</label>
 								</li>
 								<li>
-									<input type="checkbox" id="tipo_producto_8" name="tipo_producto_8" value="sofa">
-									<label for="tipo_producto_8">Sofás</label>
+									<label for="tipo_producto_8">
+										<input type="checkbox" id="tipo_producto_8" name="tipo_producto_8" value="sofa">
+										<span>Sofás</span>
+									</label>
 								</li>
 							</ul>
 						</div>
 						
 					</div><!--cierre barra lateral izquierda - menu-->
 
-
-					<div class="col-md-9"><!--barra lateral derecha (planilla de img y barra de filtrado/ordenar)-->
+					<div class="col-md-9"><!--barra lateral derecha (planilla productos, menu de filtrado-paginacion)-->
 						
-						<div class="flex p-3 view_desktop"><!--container barra filtrar/ordenar-->
-							<div><!--container ordenar-->
+						<div class="flex p-3 view_desktop"><!--container barra filtrar-ordenar-->
+							<div>
 								<div>
 									<span class="text-black-50 small">Ordenar por:</span>
 								</div>
@@ -372,7 +381,7 @@
 										</ul>
 									</div>
 								</div>
-							</div><!--cierre container ordenar-->
+							</div>
 									
 							<div class="container_pagination"><!--container paginacion-->
 								<div class="pb-2">
@@ -401,7 +410,6 @@
 							</div>
 						</div> <!--cierre container barra filtrar/ordenar-->
 						
-
 						<div class="row justify-content-center main__grid_productos"> <!--plantilla de productos-->
 							<div class="col-12 col-sm-6 col-md-4">
 								<div class="text-center">
@@ -594,7 +602,7 @@
 							</div>
 						</div><!--cierre planilla-->
 						
-						<div class="container_pagination justify-content-center"><!--siguiente pagina-->
+						<div class="container_pagination justify-content-center"><!--paginacion-->
 							<div class="pb-2">
 								<span class="text-black-50 small pr-3">Páginas:</span>
 							</div>
@@ -617,15 +625,13 @@
 									<a href="#"><i class="fas fa-chevron-right"></i></a>
 								</div>
 							</div>
-						</div><!--cierre siguiente pagina-->
+						</div><!--cierre paginacion-->
 
 					</div><!--cierre barra lateral derecha (planilla de img y barra de filtrado/ordenar)-->
 					
 				</div><!--cierre contenedor del menu DESKTOP-->
 				
-
-				
-			</div><!--cierre contranier del body de la pagina productos-->
+			</div><!--cierre container del body de la pagina productos-->
 
 
 
@@ -635,7 +641,7 @@
 					
 					<div class="header_modal">
 						<div class="title">
-							<h3>FILTRAR</h3>
+							<h4>FILTRAR</h4>
 						</div>
 						<div class="close" id="close">
 							<a href="#"><span><i class="fas fa-times"></i></span></a>
@@ -644,37 +650,53 @@
 
 					<div class="body_modal">
 						<ul>
-							<li>
-								<input type="checkbox" id="tipo_producto_1" name="tipo_producto_1" value="comoda">
-								<label for="tipo_producto_1">Cómoda</label> 
+							<li>	
+								<label for="tipo_producto_1">
+									<input type="checkbox" id="tipo_producto_1" name="tipo_producto_1" value="comoda">
+									<span>Cómoda</span>
+								</label> 
 							</li>
 							<li>
-								<input type="checkbox" id="tipo_producto_2" name="tipo_producto_2" value="escritorio">
-								<label for="tipo_producto_2">Escritorios</label> 
+								<label for="tipo_producto_2">
+									<input type="checkbox" id="tipo_producto_2" name="tipo_producto_2" value="escritorio">
+									<span>Escritorios</span>
+								</label> 
 							</li>
 							<li>
-								<input type="checkbox" id="tipo_producto_3" name="tipo_producto_3" value="estanteria">
-								<label for="tipo_producto_3">Estanterias</label> 
+								<label for="tipo_producto_3">
+									<input type="checkbox" id="tipo_producto_3" name="tipo_producto_3" value="estanteria">
+									<span>Estanterias</span>
+								</label> 
 							</li>
 							<li>
-								<input type="checkbox" id="tipo_producto_4" name="tipo_producto_4" value="juego_mesa">
-								<label for="tipo_producto_4">Juego de mesa</label> 
+								<label for="tipo_producto_4">
+									<input type="checkbox" id="tipo_producto_4" name="tipo_producto_4" value="juego_mesa">
+									<span>Juego de mesa</span>
+								</label> 
 							</li>
 							<li>
-								<input type="checkbox" id="tipo_producto_5" name="tipo_producto_5" value="mesa">
-								<label for="tipo_producto_5">Mesas</label> 
+								<label for="tipo_producto_5">
+									<input type="checkbox" id="tipo_producto_5" name="tipo_producto_5" value="mesa">
+									<span>Mesas</span>
+								</label> 
 							</li>
 							<li>
-								<input type="checkbox" id="tipo_producto_6" name="tipo_producto_6" value="ropero">
-								<label for="tipo_producto_6">Roperos</label> 
+								<label for="tipo_producto_6">
+									<input type="checkbox" id="tipo_producto_6" name="tipo_producto_6" value="ropero">
+									<span>Roperos</span>
+								</label> 
 							</li>
 							<li>
-								<input type="checkbox" id="tipo_producto_7" name="tipo_producto_7" value="silla">
-								<label for="tipo_producto_7">Sillas</label>
+								<label for="tipo_producto_7">
+									<input type="checkbox" id="tipo_producto_7" name="tipo_producto_7" value="silla">
+									<span>Sillas</span>
+								</label>
 							</li>
 							<li>
-								<input type="checkbox" id="tipo_producto_8" name="tipo_producto_8" value="sofa">
-								<label for="tipo_producto_8">Sofás</label>
+								<label for="tipo_producto_8">
+									<input type="checkbox" id="tipo_producto_8" name="tipo_producto_8" value="sofa">
+									<span>Sofás</span>
+								</label>
 							</li>
 						</ul>
 					</div>
@@ -695,7 +717,7 @@
 					
 					<div class="header_modal">
 						<div class="title">
-							<h3>ORDENAR POR</h3>
+							<h4>ORDENAR POR</h4>
 						</div>
 						<div class="close" id="close_ordenar">
 							<a href="#"><span><i class="fas fa-times"></i></span></a>
@@ -703,34 +725,30 @@
 					</div>
 
 					<div class="body_modal">
+						<div class="subtitulo">
+							<p>Selecciona una opción</p>
+						</div>
 						<ul>
 							<li>
-								<input type="checkbox" id="tipo_orden_1" name="tipo_orden_1" value="menMay">
-								<label for="tipo_orden_1">Precio de menor a mayor</label> 
+								<button type="button">Precio de menor a mayor</button> 
 							</li>
 							<li>
-								<input type="checkbox" id="tipo_orden_2" name="tipo_orden_2" value="mayMen">
-								<label for="tipo_orden_2">Precio de mayor a menor</label> 
+								<button type="button">Precio de mayor a menor</button> 
 							</li>
 							<li>
-								<input type="checkbox" id="tipo_orden_3" name="tipo_orden_3" value="AZ">
-								<label for="tipo_orden_3">A - Z</label> 
+								<button type="button">A - Z</button> 
 							</li>
 							<li>
-								<input type="checkbox" id="tipo_orden_4" name="tipo_orden_4" value="ZA">
-								<label for="tipo_orden_4">Z - A</label> 
+								<button type="button">Z - A</button> 
 							</li>
 							<li>
-								<input type="checkbox" id="tipo_orden_5" name="tipo_orden_5" value="masVendido">
-								<label for="tipo_orden_5">Más vendidos</label> 
+								<button type="button">Más vendidos</button> 
 							</li>
 							<li>
-								<input type="checkbox" id="tipo_orden_6" name="tipo_orden_6" value="Destacados">
-								<label for="tipo_orden_6">Destacados</label>
+								<button type="button">Destacados</button>
 							</li>
 							<li>
-								<input type="checkbox" id="tipo_orden_7" name="tipo_orden_7" value="ultIngresado">
-								<label for="tipo_orden_7">Últimos ingresados</label> 
+								<button type="button">Últimos ingresados</button> 
 							</li>
 						</ul>
 					</div>
@@ -742,7 +760,7 @@
 
 
 
-		</div> <!--cierre container container-header-->
+		</div> <!--cierre container padre-->
 	</main>
 
 	<footer class="container"> <!--pie de pagina-->
@@ -753,19 +771,19 @@
                     <p class="small">Copyright 2019 | Todos los derechos reservados Rustimuebles.com. Chivilcoy 1635 (1191) | Capital Federal | Argentina</p>
                 </div>
                 <div>
-                    <p class="text-black-50 ocultar_txt"><small>Las fotos son a modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a la verificación de stock. Los precios online y los planes de financiación para los productos presentados/publicados en www.rustimuebles.com.ar y/o www.rustimuebles.com son válidos exclusivamente para la compra vía internet en las páginas antes mencionadas.Las especificaciones técnicas y descripciones están sujetas a cambios sin previo aviso.</small></p>
+                    <p class="text-black-50 footer__ocultar_txt"><small>Las fotos son a modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a la verificación de stock. Los precios online y los planes de financiación para los productos presentados/publicados en www.rustimuebles.com.ar y/o www.rustimuebles.com son válidos exclusivamente para la compra vía internet en las páginas antes mencionadas.Las especificaciones técnicas y descripciones están sujetas a cambios sin previo aviso.</small></p>
                 </div>
             </div>
 
             <div class="col-lg-3 d-flex align-items-center justify-content-end"> <!--info imágenes-->
                 <div>
-                    <img src="imagen/ecommerce.png" class="ocultar_img ecommerce" alt="Ganadores ecommerce 2016">
+                    <img src="imagen/ecommerce.png" class="footer__ocultar_img footer__ecommerce" alt="Ganadores footer__ecommerce 2016">
                 </div>
                 <div>
-                    <a href="#"><img class="ocultar_img sello_cace mx-2" src="imagen/sello_cace.png" alt="Logo cace"></a>
+                    <a href="#"><img class="footer__ocultar_img footer__sello_cace mx-2" src="imagen/sello_cace.png" alt="Logo cace"></a>
                 </div>
                 <div>
-                    <a href="#"><img class="ocultar_img data_fiscal" src="imagen/data_fiscal.png" alt="Data fiscal"></a>
+                    <a href="#"><img class="footer__ocultar_img footer__data_fiscal" src="imagen/data_fiscal.png" alt="Data fiscal"></a>
                 </div>
             </div>
         </div>

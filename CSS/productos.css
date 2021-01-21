@@ -58,6 +58,27 @@ li{
             }
         .body_modal{
             overflow: auto;
+            height: 100%;
+        }
+/*menu mobile ordenar*/
+        .body_modal button{
+            background-color: white;
+            border: none;
+            text-align: left;
+            padding: 15px 0px;
+            height: 100%;
+            width: 100%;
+        }
+        .subtitulo{
+            font-size: 80%;
+            background-color: #f2f2f2;
+            padding: 5px 20px;
+        }
+        /*menu mobile filtrar*/
+        .body_modal label, .list_filter_md label{
+            width: 100%;
+            cursor: pointer;
+            padding: 10px 0px;
         }
 
         .footer_modal{
@@ -90,6 +111,11 @@ li{
     margin-bottom: 10px;
 }
 
+/*menu filtrar desktop*/
+.list_filter_md ul{
+    padding-left: 20px;
+}
+/*barra paginacion*/
 .container_pagination{
     display: flex;
     align-items: flex-end;
@@ -116,9 +142,6 @@ li{
             border-radius: 50%;
             background-color:rgb(255, 204, 0);
         }
-.list_filter_md li{
-    padding: 10px 0px;
-}
 .container_dropdown button:focus{
     outline: none;
 }
@@ -153,7 +176,7 @@ li{
     max-width: 1050px !important;
 }
 
-/*medias*/
+
 @media (min-width: 768px){
     .view_mobile{
         display: none;
