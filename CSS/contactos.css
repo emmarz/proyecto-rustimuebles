@@ -1,53 +1,41 @@
 main{
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%,
-    rgba(250,251,0,0.3897934173669467) 0%);
+    background-color: rgba(250,251,0,0.38);
 }
-.contenedor_form{
+.main__form{
     padding: 20px 0px;
     max-width: 330px;
     margin: auto;
 }
-.content_style{
-    color: rgb(255, 204, 0);
-    border-radius: 4px;
-}
-.iframe_ubicacion{
-    width: 100%;
-}
-textarea{
-    width: 100%;
-}
-.form_header, .form_footer{
+.main__form_header, .main__form_footer{
     text-align: center;
 }
-.form_footer input{
+.main__form_footer input{
     margin-bottom: 5px;
 }
-.form_body label{
-    display: inline;
-}
-.w_100{
-    width: 100%;
-}
-.form_body > div{
+.main__form_body div{
     padding: 5px 0px;
 }
-
+.main__w_100{
+    width: 100%;
+}
+input, select, textarea{
+    border-radius: 5px;
+}
 @media (min-width: 576px){
-    .contenedor_form{
+    .main__form{
         max-width: 530px;
     }
-    .form_body{
+    .main__form_body{
         display: flex;
         flex-direction: column;
     }
-    .form_body label{
+    .main__form_body label{
         display: flex;
     }
     span{
         flex: 1 1 auto;
     }
-    .form_body input, select{
+    .main__form_body input, select{
         flex: 5 1 auto;
         max-width: 400px;
     }

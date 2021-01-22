@@ -256,45 +256,45 @@
           
     </header>
 
-	<main>
+	<main class="main">
 		<div class="container-lg">
-			<div class="contenedor_form"> <!--formulario de contacto-->
+			<div class="main__form"> <!--formulario de contacto-->
 				<form action="#" method="GET">
 					<fieldset>
-						<div class="form_header">
+						<div class="main__form_header">
 							<legend> <h1>Contactanos</h1> </legend>
 							<p><small>Los campos con un <strong>(*)</strong> son obligatorios.</small></p>
 						</div>
 
-						<div class="form_body">
+						<div class="main__form_body">
 							<div>
-								<label for="name">
+								<label class="main__w_100" for="name">
 									<span>Nombre:<strong>(*)</strong></span>
-									<input class="w_100" type="text" id="name" name="user-name" placeholder="Su nombre" maxlength="20" required>
+									<input class="main__w_100" type="text" id="name" name="user-name" placeholder="Su nombre" maxlength="20" required>
 								</label>
 							</div>
 							<div>
-								<label for="last-name">
+								<label class="main__w_100" for="last-name">
 									<span>Apellido:<strong>(*)</strong></span>
-									<input class="w_100" type="text" id="last-name" name="user-last-name" placeholder="Su apellido" maxlength="20" required>
+									<input class="main__w_100" type="text" id="last-name" name="user-last-name" placeholder="Su apellido" maxlength="20" required>
 								</label>
 							</div>
 							<div>
-								<label for="email">
+								<label class="main__w_100" for="email">
 									<span>email:<strong>(*)</strong></span>
-									<input class="w_100" type="email" id="email" name="email" placeholder="email@example.com" maxlength="50" required>
+									<input class="main__w_100" type="email" id="email" name="email" placeholder="email@example.com" maxlength="50" required>
 								</label>
 							</div>
 							<div>
-								<label for="celular">
+								<label class="main__w_100" for="celular">
 									<span>celular:</span>
-									<input class="w_100" type="tel" id="celular" name="celular" placeholder="(sin 0 ni 15) 1168094195" pattern="[0-9]{10}" maxlength="10">
+									<input class="main__w_100" type="tel" id="celular" name="celular" placeholder="(sin 0 ni 15) 1168094195" pattern="[0-9]{10}" maxlength="10">
 								</label>
 							</div>
 							<div>
-								<label for="contact-type">
+								<label class="main__w_100" for="contact-type">
 									<span>Tipo de contacto:</span>
-								<select  name="contacto_clasificacion" id="contact-type">
+								<select class="main__w_100"  name="contacto_clasificacion" id="contact-type">
 									<option value="S">Consulta</option>
 									<option value="C">Reclamo</option>
 									<option value="D">Presupuesto</option>
@@ -308,10 +308,10 @@
 								</label>
 							</div>
 							<div>
-								<textarea id="msg" name="user-msg" cols="30" rows="6" autofocus="true" placeholder="Escriba mensaje" maxlength="400" required></textarea>
+								<textarea class="main__w_100" id="msg" name="user-msg" cols="30" rows="6" autofocus="true" placeholder="Escriba mensaje" maxlength="400" required></textarea>
 							</div>
 						</div>
-						<div class="form_footer">
+						<div class="main__form_footer">
 							<input  type="submit" value="Enviar">
 							<input  type="reset" value="Limpiar">
 						</div>
@@ -320,7 +320,7 @@
 				</form>
 			</div>
 			<div>
-				<iframe class="iframe_ubicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.4214243477313!2d-58.49598088423657!3d-34.61878916580375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9db249e5677%3A0xd40079bcd3ab81bf!2sChivilcoy%201635%2C%20C1407%20CABA!5e0!3m2!1ses-419!2sar!4v1611139283320!5m2!1ses-419!2sar" width="1200" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				<iframe class="main__iframe_gps main__w_100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.4214243477313!2d-58.49598088423657!3d-34.61878916580375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9db249e5677%3A0xd40079bcd3ab81bf!2sChivilcoy%201635%2C%20C1407%20CABA!5e0!3m2!1ses-419!2sar!4v1611139283320!5m2!1ses-419!2sar" width="1200" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 			</div>
 		</div>
 		
