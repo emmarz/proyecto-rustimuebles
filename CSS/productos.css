@@ -38,7 +38,7 @@ main button:focus {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
-    background-color: black;
+    background-color: #3f4349;
     color: white;
     padding: 10px 10px; }
     .main-modal__header .tittle {

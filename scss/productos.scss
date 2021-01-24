@@ -1,5 +1,4 @@
 @import 'misColores';
-@import 'misTipografias';
 
 main{
     a{
@@ -32,7 +31,7 @@ main{
         animation-duration: 1s;
     }
     @keyframes modal{
-        from{top:-330px; opacity:0;}
+        from{top: -330px; opacity:0;}
         to{top:0; opacity:1;}
     }
     &__header{
@@ -40,7 +39,7 @@ main{
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: nowrap;
-        background-color: black;
+        background-color: $steelGrey;
         color: white;
         padding: 10px 10px;
         .tittle{
