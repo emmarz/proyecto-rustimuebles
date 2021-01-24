@@ -7,81 +7,76 @@ main li {
 main button:focus {
   outline: none; }
 
-.main-modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  overflow: auto;
-  width: 100%;
+.main-modal__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background-color: white;
+  width: 80%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.452); }
-  .main-modal__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    background-color: white;
-    width: 80%;
-    height: 100%;
-    animation-name: modal;
-    animation-duration: 1s; }
+  animation-name: animacion;
+  animation-duration: 1s; }
 
-@keyframes modal {
+@keyframes animacion {
   from {
     top: -330px;
     opacity: 0; }
   to {
     top: 0;
     opacity: 1; } }
-  .main-modal__header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    background-color: #3f4349;
+
+.main-modal__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background-color: #3f4349;
+  color: white;
+  padding: 10px 10px; }
+  .main-modal__header .tittle {
+    flex: 3 1 auto;
+    text-align: center; }
+  .main-modal__header .close i {
     color: white;
-    padding: 10px 10px; }
-    .main-modal__header .tittle {
-      flex: 3 1 auto;
-      text-align: center; }
-    .main-modal__header .close i {
-      color: white;
-      font-size: 30px;
-      margin: 0px 10px;
-      margin-top: 5px; }
-  .main-modal__body {
-    overflow: auto;
-    height: 100%; }
-    .main-modal__body button {
-      background-color: white;
-      border: none;
-      text-align: left;
-      padding: 15px 0px;
-      height: 100%;
-      width: 100%; }
-    .main-modal__body .subtitulo {
-      font-size: 80%;
-      background-color: #f2f2f2;
-      padding: 5px 20px; }
-    .main-modal__body label {
-      width: 100%;
-      cursor: pointer;
-      padding: 10px 0px; }
-  .main-modal__footer {
-    border-top: solid 1px rgba(0, 0, 255, 0.1); }
-    .main-modal__footer div {
-      flex: 1 1 auto; }
-    .main-modal__footer .button {
-      text-align: center;
-      cursor: pointer;
-      padding: 10px 0px;
-      margin: 5px 5px; }
-    .main-modal__footer .button--aplicar {
-      background-color: #8FCA00;
-      border-radius: 5px; }
-    .main-modal__footer .button--limpiar {
-      text-decoration: underline;
-      color: grey; }
+    font-size: 30px;
+    margin: 0px 10px;
+    margin-top: 5px; }
+
+.main-modal__body {
+  overflow: auto;
+  height: 100%; }
+  .main-modal__body button {
+    background-color: white;
+    border: none;
+    text-align: left;
+    padding: 15px 0px;
+    height: 100%;
+    width: 100%; }
+  .main-modal__body .subtitulo {
+    font-size: 80%;
+    background-color: #f2f2f2;
+    padding: 5px 20px; }
+  .main-modal__body label {
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 0px; }
+
+.main-modal__footer {
+  border-top: solid 1px rgba(0, 0, 255, 0.1); }
+  .main-modal__footer div {
+    flex: 1 1 auto; }
+  .main-modal__footer .button {
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 0px;
+    margin: 5px 5px; }
+  .main-modal__footer .button--aplicar {
+    background-color: #8FCA00;
+    border-radius: 5px; }
+  .main-modal__footer .button--limpiar {
+    text-decoration: underline;
+    color: grey; }
 
 .main-flex {
   display: flex;
@@ -95,6 +90,15 @@ main button:focus {
   padding: 10px 0px; }
   .main-list_filter_md label ul {
     padding-left: 20px; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.452); }
 
 .main-grid_productos > div {
   max-width: 250px; }
@@ -142,7 +146,7 @@ main button:focus {
       background-color: #C6C5C5; }
 
 .main-dropdown__button {
-  background-color: #fff;
+  background-color: white;
   border: none;
   border-bottom: solid 1px rgba(0, 0, 0, 0.2);
   padding: 10px;

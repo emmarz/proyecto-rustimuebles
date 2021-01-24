@@ -11,14 +11,8 @@ main{
         outline: none;
     }
 }
+
 .main-modal{
-    display: none;
-    position: fixed;
-    z-index:1;
-    overflow: auto;
-    width: 100%;
-    height:100%;
-    background: rgba(0, 0, 0, 0.452);
     &__container{
         display: flex;
         flex-direction: column;
@@ -27,10 +21,10 @@ main{
         background-color: white;
         width: 80%;
         height: 100%;
-        animation-name: modal;
+        animation-name: animacion;
         animation-duration: 1s;
     }
-    @keyframes modal{
+    @keyframes animacion{
         from{top: -330px; opacity:0;}
         to{top:0; opacity:1;}
     }
@@ -66,7 +60,7 @@ main{
         }
         .subtitulo{
             font-size: 80%;
-            background-color: #f2f2f2;
+            background-color: $whiteSmoke;
             padding: 5px 20px;
         }
         label{
@@ -111,6 +105,15 @@ main{
     ul{
         padding-left: 20px;
     }
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index:1;
+    overflow: auto;
+    width: 100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.452);
 }
 
 .main-grid_productos > div{
@@ -169,7 +172,7 @@ main{
         }
     }
     &__button{
-        background-color: #fff;
+        background-color: white;
         border: none;
         border-bottom:solid 1px rgba(0, 0, 0, 0.2);
         padding: 10px;
