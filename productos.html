@@ -261,7 +261,7 @@
 		<div class="container-fluid p-0"><!--contanier padre-->
 			<div class="container-xl p-0"><!--container del body de la pagina productos-->
 	
-				<div class="row view_mobile m-0"><!--menu MOBILE filtrar y ordenar-->
+				<div class="row main-view_mobile m-0"><!--menu MOBILE filtrar y ordenar-->
 					<div id="abrir" class="col-6 px-0 text-center">
 						<button type="button" class="btn btn-block text-nowrap">
 							<i class="fas fa-filter"></i>
@@ -277,13 +277,13 @@
 					</div>
 				</div><!--cierre menu MOBILE filtrar y ordenar-->
 
-				<div class="row flex-row max_width m-0"><!--contenedor del menu DESKTOP-->
-					<div class="col-md-3 view_desktop"><!--barra lateral izquierda menu-->
+				<div class="row flex-row main-max_width m-0"><!--contenedor del menu DESKTOP-->
+					<div class="col-md-3 main-view_desktop"><!--barra lateral izquierda menu-->
 						<div class="py-4">
 							<p class="h5 text-center">Todos los productos</p>
 						</div>
 
-						<div class="py-4 list_filter_md"><!--lista del filtrado-->
+						<div class="py-4 main-list_filter_md"><!--lista del filtrado-->
 							<ul>
 								<li>	
 									<label for="tipo_producto_1">
@@ -340,15 +340,15 @@
 
 					<div class="col-md-9"><!--barra lateral derecha (planilla productos, menu de filtrado-paginacion)-->
 						
-						<div class="flex p-3 view_desktop"><!--container barra filtrar-ordenar-->
+						<div class="main-flex p-3 main-view_desktop"><!--container barra filtrar-ordenar-->
 							<div>
 								<div>
 									<span class="text-black-50 small">Ordenar por:</span>
 								</div>
 
 								<div>
-									<div class="container_dropdown">
-										<button class="btn_dropdown flex" onclick="desplegar_menu()">
+									<div class="main-dropdown">
+										<button class="main-dropdown__button main-flex" onclick="desplegar_menu()">
 											<div>
 												<span class="font-weight-bold">Destacados</span>
 											</div>
@@ -356,26 +356,26 @@
 												<i class="fas fa-angle-down"></i>
 											</div>
 										</button>
-										<ul class="dropdown_content">
-											<li class="option_content ocultar_contenido">
+										<ul class="main-dropdown__list">
+											<li class="main-dropdown__list--mostrar main-dropdown__list--ocultar">
 												<p class="pl-4">Precio de mayor a menor</p>
 											</li>
-											<li class="option_content ocultar_contenido">
+											<li class="main-dropdown__list--mostrar main-dropdown__list--ocultar">
 												<p class="pl-4">Precio de menor a mayor</p>
 											</li>
-											<li class="option_content ocultar_contenido">
+											<li class="main-dropdown__list--mostrar main-dropdown__list--ocultar">
 												<p class="pl-4">A - Z</p>
 											</li>
-											<li class="option_content ocultar_contenido">
+											<li class="main-dropdown__list--mostrar main-dropdown__list--ocultar">
 												<p class="pl-4">Z - A</p>
 											</li>
-											<li class="option_content ocultar_contenido">
+											<li class="main-dropdown__list--mostrar main-dropdown__list--ocultar">
 												<p class="pl-4">Más vendidos</p>
 											</li>
-											<li class="option_content ocultar_contenido">
+											<li class="main-dropdown__list--mostrar main-dropdown__list--ocultar">
 												<p class="pl-4">Destacados</p>
 											</li>
-											<li class="option_content ocultar_contenido">
+											<li class="main-dropdown__list--mostrar main-dropdown__list--ocultar">
 												<p class="pl-4">Últimos ingresados</p>	
 											</li>
 										</ul>
@@ -383,12 +383,12 @@
 								</div>
 							</div>
 									
-							<div class="container_pagination"><!--container paginacion-->
+							<div class="main-pagination"><!--container paginacion-->
 								<div class="pb-2">
 									<span class="text-black-50 small pr-3">Páginas:</span>
 								</div>
 
-								<div class="list_pagination_md"><!--barra paginación-->
+								<div class="main-pagination__list_md"><!--barra paginación-->
 									<div class="small">
 										<a href="#"><i class="fas fa-chevron-left"></i></a>
 									</div>
@@ -410,7 +410,7 @@
 							</div>
 						</div> <!--cierre container barra filtrar/ordenar-->
 						
-						<div class="row justify-content-center main__grid_productos"> <!--plantilla de productos-->
+						<div class="row justify-content-center main-grid_productos"> <!--plantilla de productos-->
 							<div class="col-12 col-sm-6 col-md-4">
 								<div class="text-center">
 									<img class="img-fluid" src="imagen/productos grilla/Comoda-california-6-cajones.jpg" alt="">
@@ -602,11 +602,11 @@
 							</div>
 						</div><!--cierre planilla-->
 						
-						<div class="container_pagination justify-content-center"><!--paginacion-->
+						<div class="main-pagination justify-content-center"><!--paginacion-->
 							<div class="pb-2">
 								<span class="text-black-50 small pr-3">Páginas:</span>
 							</div>
-							<div class="list_pagination_md">
+							<div class="main-pagination__list_md">
 								<div class="small">
 									<a href="#"><i class="fas fa-chevron-left"></i></a>
 								</div>
@@ -639,8 +639,8 @@
 			<div id="miModal" class="modal"> <!--modal filtrar para MOBILE-->
 				<div class="container_modal"><!--crea contenedor para visualizar por encima del flujo normal de la página-->
 					
-					<div class="header_modal">
-						<div class="title">
+					<div class="main-modal__header">
+						<div class="tittle">
 							<h4>FILTRAR</h4>
 						</div>
 						<div class="close" id="close">
@@ -648,7 +648,7 @@
 						</div>
 					</div>
 
-					<div class="body_modal">
+					<div class="main-modal__body">
 						<ul>
 							<li>	
 								<label for="tipo_producto_1">
@@ -700,12 +700,12 @@
 							</li>
 						</ul>
 					</div>
-					<div class="footer_modal flex">
+					<div class="main-modal__footer main-flex">
 						<div>
-							<p class="button btn_limpiar">Limpiar filtro</p>
+							<p class="button button--limpiar">Limpiar filtro</p>
 						</div>
 						<div>
-							<p class="button btn_aplicar">APLICAR</p>
+							<p class="button button--aplicar">APLICAR</p>
 						</div>
 					</div>
 
@@ -715,8 +715,8 @@
 			<div id="miModal_ordenar" class="modal"> <!--modal ordenar para MOBILE-->
 				<div class="container_modal">		<!--crea contenedor para visualizar por encima del flujo normal de la página-->
 					
-					<div class="header_modal">
-						<div class="title">
+					<div class="main-modal__header">
+						<div class="tittle">
 							<h4>ORDENAR POR</h4>
 						</div>
 						<div class="close" id="close_ordenar">
@@ -724,7 +724,7 @@
 						</div>
 					</div>
 
-					<div class="body_modal">
+					<div class="main-modal__body">
 						<div class="subtitulo">
 							<p>Selecciona una opción</p>
 						</div>

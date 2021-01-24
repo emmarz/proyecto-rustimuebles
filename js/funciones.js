@@ -27,8 +27,8 @@ cerrar_ordenar.addEventListener('click', function(){
 /*boton ordenar DESKTOP*/
 function desplegar_menu(){
     console.log('clic en boton ordenar');
-    var ancla = document.getElementsByClassName('option_content');
+    var ancla = document.getElementsByClassName('main-dropdown__list--mostrar');
     for(var i=0; i < ancla.length; i++){
-        ancla[i].classList.toggle('ocultar_contenido');
+        ancla[i].classList.toggle('main-dropdown__list--ocultar');
     }
 }

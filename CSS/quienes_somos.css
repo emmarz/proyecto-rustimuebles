@@ -1,21 +1,15 @@
-.container_data{
-    background-color: rgb(63, 67, 73);
-    color: white;
-}
-a{
+.main__data {
+  background-color: #3f4349;
+  color: white; }
+  .main__data a {
     text-decoration-style: none;
-    color: white;
-}
+    color: white; }
 
-/*MEDIAS*/
-@media (max-width: 575px){
-    .img_logo{
-        width: 186px;
-        padding: 10px 0px;
-    }
-}
-@media (min-width: 576px){
-    .img_logo{
-        max-height: 250px;
-    }
-}
+@media (max-width: 575px) {
+  .main__img_logo {
+    width: 186px;
+    padding: 10px 0px; } }
+
+@media (min-width: 576px) {
+  .main__img_logo {
+    max-height: 250px; } }

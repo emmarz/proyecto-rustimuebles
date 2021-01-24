@@ -1,0 +1,45 @@
+@import 'misTipografias';
+@import 'misColores';
+
+.main{
+    background-color: $yellowCream;
+    &__form{
+        padding: 20px 0px;
+        max-width: 330px;
+        margin: auto;
+        &_header, &_footer{
+            text-align: center;
+        }
+        &_body div{
+            padding: 5px 0px;
+        }
+        &_footer input{
+            margin-bottom: 5px;
+        }
+    }
+    &__iframe_gps, textarea, &__w_100{
+        width: 100%;
+    }
+}
+@media (min-width: 576px){
+    .main{
+        &__form{
+            max-width: 530px;
+            &_body{
+                display: flex;
+                flex-direction: column;
+                label{
+                    display: flex;
+                }
+                input, select{
+                    flex: 5 1 auto;
+                    max-width: 400px;
+                }
+            }
+            span{
+                flex: 1 1 auto;
+            }
+        }
+    }
+}
+

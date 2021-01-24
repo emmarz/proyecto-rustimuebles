@@ -1,16 +1,16 @@
-h1{
-    text-align: center;
-}
-.cambio_producto p{
-    border: 1px solid rgb(250, 235, 204);
-    background-color: rgb(252, 248, 227);
-    color: rgb(138, 109, 59);
-    padding: 10px 0px;
-    border-radius: 4px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 80%;
-}
-a:hover{
-    text-decoration: none;
-}
+main h1 {
+  text-align: center; }
+
+main a:hover {
+  text-decoration: none;
+  color: #ffcc00; }
+
+.main__cambio_producto p {
+  border: 1px solid #faebcc;
+  background-color: #fcf8e3;
+  color: #8a6d3b;
+  padding: 10px 0px;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 80%; }

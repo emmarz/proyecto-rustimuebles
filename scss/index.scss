@@ -1,0 +1,45 @@
+@import 'misColores';
+
+.main__promociones{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 2px 0px;
+        div{
+            width: 100%;
+            flex: 1 1 auto;
+        }
+}
+.main__img_promo:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+/*grid productos*/
+.main__grid_header{
+    p{
+        color: $steelGrey;
+    }
+}
+.main__grid_productos > div{
+    max-width: 250px;
+}
+.main__grid_productos div div + div{
+    border: solid 1px $gainsboro;
+    margin-bottom: 10px;
+}
+.main__grid_footer a{
+    text-decoration: none;
+    color: $steelGrey;
+}
+/*api whatsapp*/
+.main__whatsapp img{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1;
+        &:hover{
+            transform: scale(1.3);
+            transition: .5s;
+        }
+    }  

@@ -1,0 +1,23 @@
+@import 'misColores';
+@import 'misTipografias';
+
+
+$etiquetas:(
+    body: $lato,
+    header: $abril
+);
+@each $name, $font in $etiquetas{
+    #{$name}{
+        font-family: $font;
+    }
+}
+
+.header__contenedor{
+    background-color: $steelGrey;
+    a{
+        color: $girasol !important;
+        &:hover{
+            color: $contessa !important;
+        }
+    }  
+}

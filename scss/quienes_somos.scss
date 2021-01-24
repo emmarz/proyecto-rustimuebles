@@ -1,0 +1,22 @@
+@import 'misColores';
+@import 'misTipografias';
+ 
+.main__data{
+    background-color: $steelGrey;
+    color: white;
+    a{
+        text-decoration-style: none;
+        color: white;
+    }
+}
+@media (max-width: 575px){
+    .main__img_logo{
+        width: 186px;
+        padding: 10px 0px;
+    }
+}
+@media (min-width: 576px){
+    .main__img_logo{
+        max-height: 250px;
+    }
+}

@@ -1,45 +1,38 @@
-/*bloque PROMOCIONES*/
-.main__promociones{
-    display: flex;
-    flex-wrap: nowrap;
-    margin: 2px 0px;
-}
-.main__promociones div{
+.main__promociones {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 2px 0px; }
+  .main__promociones div {
     width: 100%;
-    flex: 1 1 auto;
-}
-    .main__img_promo:hover{
-        transform: rotate(360deg);/*aumenta o reduce tamaño  rota*/
-        transition: 1s;/*velocidad en el efecto*/
-    }
+    flex: 1 1 auto; }
 
+.main__img_promo:hover {
+  transform: rotate(360deg);
+  transition: 1s; }
 
-/*bloque PRODUCTOS (grilla)*/
-.main__grid_productos > div{
-    max-width: 250px;
-}
-.main__grid_productos div div + div{
-    border: solid 1px rgba(221, 219, 219, 0.8); /*gainsboro*/
-    margin-bottom: 10px;
-}
-.main__grid_footer a{
-    text-decoration: none;
-    color: rgb(117, 110, 110);
-}
-.main__grid_header p{
-    color: rgb(146, 126, 126);
-}
+/*grid productos*/
+.main__grid_header p {
+  color: #3f4349; }
 
-    /*************HATSAPP********/
-.main__whatsapp img{
-width: 60px;
-height: 60px;
-position: fixed;
-bottom: 40px;
-right: 40px;
-z-index: 1;
-}  
-.main__whatsapp img:hover{
-transform: scale(1.3);
-transition: .5s;
-}
+.main__grid_productos > div {
+  max-width: 250px; }
+
+.main__grid_productos div div + div {
+  border: solid 1px #dcdbdb;
+  margin-bottom: 10px; }
+
+.main__grid_footer a {
+  text-decoration: none;
+  color: #3f4349; }
+
+/*api whatsapp*/
+.main__whatsapp img {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1; }
+  .main__whatsapp img:hover {
+    transform: scale(1.3);
+    transition: .5s; }
